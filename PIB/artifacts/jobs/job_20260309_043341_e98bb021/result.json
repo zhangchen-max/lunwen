@@ -1,0 +1,12 @@
+{
+  "job_id": "job_20260309_043341_e98bb021",
+  "job_type": "freeze_current",
+  "status": "succeeded",
+  "exit_code": 0,
+  "structured_errors": [],
+  "raw_summary": {
+    "stdout_tail": "Release manifest written to release/benchmark_manifest.json\nRelease baseline reports written to results/reports\n",
+    "stderr_tail": ""
+  },
+  "target_release_id": "v1.1.0-rc1"
+}

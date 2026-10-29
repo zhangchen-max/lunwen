@@ -1,0 +1,49 @@
+Validation passed
+Hard constraints
+- slot_count=120
+- dynamic.max_turns_cap=15
+- os_ocrd_subtypes_count=3
+- config=pib_config.yaml
+Cases: 110
+Rubrics: 110
+Slots in ontology: 120
+SVCL domains: 11
+
+Module Distribution
+-------------------
+DEP: 10
+DICCD: 10
+OCRD: 30
+OTHER: 10
+PD: 20
+SSRD: 10
+TSR: 20
+
+Label Distribution
+------------------
+ADJ: 10
+BDD: 10
+BPD: 10
+IED: 10
+OCD: 10
+OCPD: 10
+OS_OCRD: 10
+OTHER: 10
+PGD: 10
+PMDD: 10
+SSD: 10
+
+Ambiguity Distribution
+----------------------
+ambiguous: 44
+unambiguous: 66
+
+Required SVCL Coverage
+----------------------
+cog_emotion_process: 60
+comorbidity_pattern: 22
+course_stability: 90
+environmental_risk: 30
+functional_impairment: 110
+symptom_profile: 60
+temperament_personality: 20

@@ -1,0 +1,10 @@
+model_name,provider,run_type,status,reason,stdout_path,stderr_path,run_id
+GPT-5.2,openai,dynamic,failed,"  File ""/Users/xie/Documents/New project/models/adapters/openai_chat.py"", line 28, in _complete_uncached
+    raise RuntimeError(""OPENAI_API_KEY is required for OpenAIChatAdapter"")
+RuntimeError: OPENAI_API_KEY is required for OpenAIChatAdapter",artifacts/jobs/job_20260309_113946_e43ad2ef/stdout.log,artifacts/jobs/job_20260309_113946_e43ad2ef/stderr.log,run_20260309_113946_2c6f7805
+Claude Sonnet 4.6,anthropic,dynamic,failed,"  File ""/Users/xie/Documents/New project/models/adapters/anthropic.py"", line 28, in _complete_uncached
+    raise RuntimeError(""ANTHROPIC_API_KEY is required for AnthropicAdapter"")
+RuntimeError: ANTHROPIC_API_KEY is required for AnthropicAdapter",artifacts/jobs/job_20260309_113947_c5e9f728/stdout.log,artifacts/jobs/job_20260309_113947_c5e9f728/stderr.log,run_20260309_113947_a9c8e2a1
+Qwen3-14B,local,dynamic,failed,"  File ""/Users/xie/Documents/New project/models/adapters/http_utils.py"", line 28, in post_json
+    raise AdapterHttpError(f""Failed to reach {url}: {exc.reason}"") from exc
+models.adapters.http_utils.AdapterHttpError: Failed to reach http://localhost:8000/v1/chat/completions: [Errno 1] Operation not permitted",artifacts/jobs/job_20260309_113947_f2274919/stdout.log,artifacts/jobs/job_20260309_113947_f2274919/stderr.log,run_20260309_113947_0525153d

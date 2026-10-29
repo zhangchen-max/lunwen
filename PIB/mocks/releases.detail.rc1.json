@@ -1,0 +1,50 @@
+{
+  "release_id": "v1.1.0-rc1",
+  "label": "PIB Benchmark v1.1.0-rc1",
+  "state": "success",
+  "manifest": {
+    "benchmark_version": "1.1.0-rc1",
+    "dataset_version": "1.1.0-rc1",
+    "scoring_policy_version": "1.1.0-rc1",
+    "no_oracle_policy_version": "1.1.0-rc1",
+    "slot_count": 120,
+    "dynamic_max_turns": 15,
+    "os_ocrd_subtypes": [
+      "OS_OCRD_BFRB",
+      "OS_OCRD_JEAL",
+      "OS_OCRD_OTHER"
+    ],
+    "dataset_hash_sha256": "c42e6f02ba2c749a74888f99a07ad1d7e0267a9b35e698cb4400882cf3792c5e",
+    "scoring_hash_sha256": "e08ed5d9c5026ed2b7336f4f683d62d61656ca3fb0742c223f8e2793f328533b",
+    "cases_sha256": "d2816dbeb52b88aa4d8316c58594b4287397606f34e3cf3694d91b094a2ab809",
+    "rubrics_sha256": "a30e9ea50e890bacad83e91ba1768cd8da334d41244c64867b4b8ec235505587",
+    "splits_sha256": "3f8bc6de50792df3a8ef210e92eefdcc2d4245787add8679a26f822086645dd5"
+  },
+  "bundle": {
+    "path": "release/PIB-Benchmark-v1.1.0-rc1/",
+    "files": [
+      {
+        "name": "benchmark_manifest.json",
+        "path": "release/PIB-Benchmark-v1.1.0-rc1/benchmark_manifest.json",
+        "size": 4096
+      },
+      {
+        "name": "pure_baselines.csv",
+        "path": "release/PIB-Benchmark-v1.1.0-rc1/reports/pure_baselines.csv",
+        "size": 1024
+      }
+    ]
+  },
+  "reports": {
+    "pure_baselines": "results/reports/pure_baselines.csv",
+    "guided_llm_baselines": "results/reports/guided_llm_baselines.csv",
+    "deprecated_results": "results/reports/deprecated_results.json"
+  },
+  "audits": {
+    "no_oracle": "results/audit/no_oracle_baselines.json",
+    "text_contamination": "results/audit/text_contamination_scan.json",
+    "other": [
+      "results/audit/ambiguity_scoring_example.json"
+    ]
+  }
+}

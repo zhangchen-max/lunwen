@@ -1,0 +1,132 @@
+- main [ref=e690]:
+  - paragraph [ref=e691]:
+    - link "Releases" [ref=e692] [cursor=pointer]:
+      - /url: /releases
+    - text: ·
+    - link "Run summary" [ref=e693] [cursor=pointer]:
+      - /url: /runs/run_20260309_121353_133aa7f6
+    - text: ·
+    - link "Slices" [ref=e694] [cursor=pointer]:
+      - /url: /runs/run_20260309_121353_133aa7f6/slices
+  - generic [ref=e695]:
+    - heading "Case Detail" [level=1] [ref=e696]
+    - paragraph [ref=e697]: Run run_20260309_121353_133aa7f6 · Case PIB_0041
+  - generic [ref=e698]:
+    - heading "Case header" [level=2] [ref=e699]
+    - generic [ref=e700]:
+      - generic [ref=e701]:
+        - strong [ref=e702]: Module
+        - generic [ref=e703]: PD
+      - generic [ref=e704]:
+        - strong [ref=e705]: Label
+        - generic [ref=e706]: BPD
+      - generic [ref=e707]:
+        - strong [ref=e708]: Ambiguity
+        - generic [ref=e709]: ambiguous
+      - generic [ref=e710]:
+        - strong [ref=e711]: Gold
+        - generic [ref=e712]: BPD
+  - generic [ref=e713]:
+    - heading "Case meta" [level=2] [ref=e714]
+    - generic [ref=e715]:
+      - generic [ref=e716]:
+        - strong [ref=e717]: Minimal CC
+        - generic [ref=e718]: 关系一乱我就会想伤害自己。
+      - generic [ref=e719]:
+        - strong [ref=e720]: Required SVCL domains
+        - generic [ref=e721]: temperament_personality, functional_impairment, comorbidity_pattern, cog_emotion_process
+      - generic [ref=e722]:
+        - strong [ref=e723]: Must-ask slots
+        - generic [ref=e724]: longstanding_pattern, relationship_instability, abandonment_sensitivity, impairment_social, self_harm_ideation
+      - generic [ref=e725]:
+        - strong [ref=e726]: Gold DDX Top-5
+        - generic [ref=e727]: BPD, IED, PMDD, ADJ, OTHER
+      - generic [ref=e728]:
+        - strong [ref=e729]: Risk flags
+        - generic [ref=e730]: "{ \"suicide\": true, \"violence\": false, \"psychosis\": false, \"substance\": false }"
+  - generic [ref=e731]:
+    - heading "Run output" [level=2] [ref=e732]
+    - generic [ref=e733]:
+      - generic [ref=e734]:
+        - strong [ref=e735]: Pred top-k
+        - generic [ref=e736]: "[ { \"label\": \"OTHER\", \"confidence\": 0.56 }, { \"label\": \"ADJ\", \"confidence\": 0.18 }, { \"label\": \"SSD\", \"confidence\": 0.12 }, { \"label\": \"PMDD\", \"confidence\": 0.08 }, { \"label\": \"OCD\", \"confidence\": 0.06 } ]"
+      - generic [ref=e737]:
+        - generic [ref=e738]:
+          - strong [ref=e739]: Top-1 correct
+          - generic [ref=e740]: "false"
+        - generic [ref=e741]:
+          - strong [ref=e742]: Top-3 hit
+          - generic [ref=e743]: "false"
+        - generic [ref=e744]:
+          - strong [ref=e745]: Must-ask hit rate
+          - generic [ref=e746]: "0.4"
+        - generic [ref=e747]:
+          - strong [ref=e748]: SVCL coverage
+          - generic [ref=e749]: "0.75"
+  - generic [ref=e750]:
+    - heading "Failure buckets" [level=2] [ref=e751]
+    - generic [ref=e752]:
+      - generic [ref=e753]: top1_wrong
+      - generic [ref=e754]: top3_miss
+      - generic [ref=e755]: must_ask_miss
+      - generic [ref=e756]: svcl_coverage_gap
+  - generic [ref=e757]:
+    - heading "Failure analysis" [level=2] [ref=e758]
+    - generic [ref=e759]:
+      - generic [ref=e760]:
+        - strong [ref=e761]: Missing must-ask slots
+        - generic [ref=e762]: longstanding_pattern, relationship_instability, impairment_social
+      - generic [ref=e763]:
+        - strong [ref=e764]: Missing SVCL domains
+        - generic [ref=e765]: cog_emotion_process
+  - generic [ref=e766]:
+    - heading "Replay timeline" [level=2] [ref=e767]
+    - generic [ref=e768]:
+      - article [ref=e769]:
+        - generic [ref=e770]: Turn 1 · self_harm_ideation
+        - generic [ref=e771]:
+          - strong [ref=e772]: "Doctor:"
+          - text: 请描述一下关于 self_harm_ideation 的情况。
+        - generic [ref=e773]:
+          - strong [ref=e774]: "Patient:"
+          - text: 压力大的时候我会有自伤念头。
+      - article [ref=e775]:
+        - generic [ref=e776]: Turn 2 · abandonment_sensitivity
+        - generic [ref=e777]:
+          - strong [ref=e778]: "Doctor:"
+          - text: 请描述一下关于 abandonment_sensitivity 的情况。
+        - generic [ref=e779]:
+          - strong [ref=e780]: "Patient:"
+          - text: 我特别怕别人不要我。
+      - article [ref=e781]:
+        - generic [ref=e782]: Turn 3 · duration
+        - generic [ref=e783]:
+          - strong [ref=e784]: "Doctor:"
+          - text: 请描述一下关于 duration 的情况。
+        - generic [ref=e785]:
+          - strong [ref=e786]: "Patient:"
+          - text: 我想不起来具体细节。
+      - article [ref=e787]:
+        - generic [ref=e788]: Turn 4 · onset_time
+        - generic [ref=e789]:
+          - strong [ref=e790]: "Doctor:"
+          - text: 请描述一下关于 onset_time 的情况。
+        - generic [ref=e791]:
+          - strong [ref=e792]: "Patient:"
+          - text: 我想不起来具体细节。
+      - article [ref=e793]:
+        - generic [ref=e794]: Turn 5 · impairment_school
+        - generic [ref=e795]:
+          - strong [ref=e796]: "Doctor:"
+          - text: 请描述一下关于 impairment_school 的情况。
+        - generic [ref=e797]:
+          - strong [ref=e798]: "Patient:"
+          - text: 我不太确定。
+      - article [ref=e799]:
+        - generic [ref=e800]: Turn 6 · unknown_slot
+        - generic [ref=e801]:
+          - strong [ref=e802]: "Doctor:"
+          - text: —
+        - generic [ref=e803]:
+          - strong [ref=e804]: "Patient:"
+          - text: —

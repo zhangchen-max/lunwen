@@ -1,0 +1,42 @@
+{
+  "static_runs": [
+    {
+      "run_dir": "results/static/test_static/run_003",
+      "predictions_jsonl": "results/static/test_static/run_003/predictions.jsonl",
+      "summary_csv": "results/static/test_static/run_003/summary.csv",
+      "metrics_json": "results/static/test_static/run_003/metrics.json",
+      "predictions_sha256": "bcb0070c4ddd260f4da620fb13ab0e2d41f6e87bd4f00070a50b69761e468c51",
+      "summary_sha256": "d85e96c57c02da3e1f4cfec65a6d1ee1c678abd6c7976de2aa6108afe9c4945a",
+      "metrics_sha256": "dccf48e15dcb7dcf63ce9f6b0c531983684c10521e49f97436fe481144c70012"
+    },
+    {
+      "run_dir": "results/static/test_static/run_004",
+      "predictions_jsonl": "results/static/test_static/run_004/predictions.jsonl",
+      "summary_csv": "results/static/test_static/run_004/summary.csv",
+      "metrics_json": "results/static/test_static/run_004/metrics.json",
+      "predictions_sha256": "bcb0070c4ddd260f4da620fb13ab0e2d41f6e87bd4f00070a50b69761e468c51",
+      "summary_sha256": "d85e96c57c02da3e1f4cfec65a6d1ee1c678abd6c7976de2aa6108afe9c4945a",
+      "metrics_sha256": "2fa3e4c4f1290bcd641da843c571d847abd5c1e2ff8f2fa36b468dc8bdd604f1"
+    }
+  ],
+  "dynamic_runs": [
+    {
+      "run_dir": "results/dynamic/test_dynamic/run_003",
+      "predictions_jsonl": "results/dynamic/test_dynamic/run_003/predictions.jsonl",
+      "summary_csv": "results/dynamic/test_dynamic/run_003/summary.csv",
+      "metrics_json": "results/dynamic/test_dynamic/run_003/metrics.json",
+      "predictions_sha256": "062baa5cf8f01429d51e6f023941834d29d556502007d3c38556fa18918a6798",
+      "summary_sha256": "3d8a1eed36965a25719bfd9a7db71999e6dbc4bd3a853037cf9730c4bf0cf2e4",
+      "metrics_sha256": "e978ac897dd66670407376cf5a2de6662471ce2fc18d78570cddee009accc784"
+    },
+    {
+      "run_dir": "results/dynamic/test_dynamic/run_004",
+      "predictions_jsonl": "results/dynamic/test_dynamic/run_004/predictions.jsonl",
+      "summary_csv": "results/dynamic/test_dynamic/run_004/summary.csv",
+      "metrics_json": "results/dynamic/test_dynamic/run_004/metrics.json",
+      "predictions_sha256": "062baa5cf8f01429d51e6f023941834d29d556502007d3c38556fa18918a6798",
+      "summary_sha256": "3d8a1eed36965a25719bfd9a7db71999e6dbc4bd3a853037cf9730c4bf0cf2e4",
+      "metrics_sha256": "45a0f6b94a554e5742d30a05a368b49696f2f2d1f652111f3cdc0ae8446f2e07"
+    }
+  ]
+}

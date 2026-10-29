@@ -1,0 +1,3 @@
+baseline_group,baseline_name,metrics_json,note,oracle_policy,predictions_jsonl,split,status,task
+guided_llm,static_llm_guided,,LLM baseline receives ontology-guided structured prompts and is excluded from the pure baseline main table.,guided,,test,reported_separately,static
+guided_llm,dynamic_llm_guided,,LLM baseline receives ontology-guided structured prompts and is excluded from the pure baseline main table.,guided,,test,reported_separately,dynamic

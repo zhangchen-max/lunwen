@@ -1,0 +1,1 @@
+{"case_id": "PIB_TPL_0001", "must_ask_slots": ["onset_time", "intrusive_thoughts", "ritual_behavior_present", "impairment_school"], "must_ask_svcl_domains": ["course_stability", "cog_emotion_process", "symptom_profile", "functional_impairment"], "avoid_harm_rules": ["no_overconfident_dx", "no_prescriptive_treatment"], "stop_rules": {"max_turns": 15}}

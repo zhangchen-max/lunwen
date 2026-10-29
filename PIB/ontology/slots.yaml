@@ -1,0 +1,1297 @@
+[
+  {
+    "slot_id": "onset_time",
+    "type": "duration_or_date",
+    "group": "common",
+    "domain_hint": "course_stability",
+    "question_templates_cn": [
+      "从什么时候开始出现这种情况？"
+    ],
+    "normalize": {
+      "allowed_units": [
+        "days",
+        "weeks",
+        "months",
+        "years"
+      ]
+    }
+  },
+  {
+    "slot_id": "duration",
+    "type": "duration_or_date",
+    "group": "common",
+    "domain_hint": "course_stability",
+    "question_templates_cn": [
+      "这种情况持续多久了？"
+    ],
+    "normalize": {
+      "allowed_units": [
+        "days",
+        "weeks",
+        "months",
+        "years"
+      ]
+    }
+  },
+  {
+    "slot_id": "symptom_frequency",
+    "type": "ordinal",
+    "group": "common",
+    "domain_hint": "course_stability",
+    "question_templates_cn": [
+      "这些症状出现得有多频繁？"
+    ],
+    "scale": [
+      "none",
+      "occasional",
+      "weekly",
+      "daily",
+      "constant"
+    ]
+  },
+  {
+    "slot_id": "symptom_progression",
+    "type": "categorical",
+    "group": "common",
+    "domain_hint": "course_stability",
+    "question_templates_cn": [
+      "最近整体是在加重、减轻还是反复波动？"
+    ],
+    "choices": [
+      "improving",
+      "stable",
+      "worsening",
+      "fluctuating",
+      "unknown"
+    ]
+  },
+  {
+    "slot_id": "episodic_pattern",
+    "type": "categorical",
+    "group": "common",
+    "domain_hint": "course_stability",
+    "question_templates_cn": [
+      "这些症状更像间歇发作还是持续存在？"
+    ],
+    "choices": [
+      "episodic",
+      "persistent",
+      "cyclic",
+      "mixed",
+      "unknown"
+    ]
+  },
+  {
+    "slot_id": "recent_exacerbation",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "course_stability",
+    "question_templates_cn": [
+      "最近这段时间有没有明显加重？"
+    ]
+  },
+  {
+    "slot_id": "stressor_present",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "environmental_risk",
+    "question_templates_cn": [
+      "最近有没有发生让你压力很大的事情？"
+    ]
+  },
+  {
+    "slot_id": "stressor_type",
+    "type": "categorical",
+    "group": "common",
+    "domain_hint": "environmental_risk",
+    "question_templates_cn": [
+      "如果有压力事件，主要属于哪一类？"
+    ],
+    "choices": [
+      "academic_work",
+      "family",
+      "financial",
+      "interpersonal",
+      "health",
+      "other",
+      "unknown"
+    ]
+  },
+  {
+    "slot_id": "loss_event_present",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "environmental_risk",
+    "question_templates_cn": [
+      "近期有没有重要的人、关系或角色的丧失？"
+    ]
+  },
+  {
+    "slot_id": "trauma_exposure",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "environmental_risk",
+    "question_templates_cn": [
+      "是否经历过让你明显受惊或受创的事件？"
+    ]
+  },
+  {
+    "slot_id": "family_conflict",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "environmental_risk",
+    "question_templates_cn": [
+      "家庭关系中是否存在持续冲突？"
+    ]
+  },
+  {
+    "slot_id": "academic_work_stress",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "environmental_risk",
+    "question_templates_cn": [
+      "学习或工作压力是否明显？"
+    ]
+  },
+  {
+    "slot_id": "financial_stress",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "environmental_risk",
+    "question_templates_cn": [
+      "经济压力是否明显影响到你？"
+    ]
+  },
+  {
+    "slot_id": "social_support_low",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "environmental_risk",
+    "question_templates_cn": [
+      "你会觉得身边缺少支持你的人吗？"
+    ]
+  },
+  {
+    "slot_id": "family_history_psy",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "family_aggregation",
+    "question_templates_cn": [
+      "家里有人有精神心理方面的问题吗？"
+    ]
+  },
+  {
+    "slot_id": "family_history_mood",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "family_aggregation",
+    "question_templates_cn": [
+      "家里有人长期受情绪问题困扰吗？"
+    ]
+  },
+  {
+    "slot_id": "family_history_ocrd",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "family_aggregation",
+    "question_templates_cn": [
+      "家里有人有强迫、外貌过度担忧或类似问题吗？"
+    ]
+  },
+  {
+    "slot_id": "family_history_impulsivity",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "family_aggregation",
+    "question_templates_cn": [
+      "家里有人有明显冲动、暴怒或类似行为问题吗？"
+    ]
+  },
+  {
+    "slot_id": "intrusive_thoughts",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "cog_emotion_process",
+    "question_templates_cn": [
+      "会不会有一些不想要的念头反复闯进来？"
+    ]
+  },
+  {
+    "slot_id": "rumination",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "cog_emotion_process",
+    "question_templates_cn": [
+      "你会不会反复想同一件事，停不下来？"
+    ]
+  },
+  {
+    "slot_id": "catastrophizing",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "cog_emotion_process",
+    "question_templates_cn": [
+      "你会不会总把结果想得特别糟？"
+    ]
+  },
+  {
+    "slot_id": "concentration_problem",
+    "type": "ordinal",
+    "group": "common",
+    "domain_hint": "cog_emotion_process",
+    "question_templates_cn": [
+      "注意力和专注力受到影响的程度有多大？"
+    ],
+    "scale": [
+      "none",
+      "mild",
+      "moderate",
+      "severe"
+    ]
+  },
+  {
+    "slot_id": "dissociation_like_symptom",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "cog_emotion_process",
+    "question_templates_cn": [
+      "压力大时会不会有发呆、失真或像不在现场的感觉？"
+    ]
+  },
+  {
+    "slot_id": "emotion_regulation_difficulty",
+    "type": "ordinal",
+    "group": "common",
+    "domain_hint": "cog_emotion_process",
+    "question_templates_cn": [
+      "你调节情绪的困难程度有多大？"
+    ],
+    "scale": [
+      "none",
+      "mild",
+      "moderate",
+      "severe"
+    ]
+  },
+  {
+    "slot_id": "reassurance_seeking",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "cog_emotion_process",
+    "question_templates_cn": [
+      "你会频繁向别人确认、寻求安慰或保证吗？"
+    ]
+  },
+  {
+    "slot_id": "symptom_insight",
+    "type": "categorical",
+    "group": "common",
+    "domain_hint": "cog_emotion_process",
+    "question_templates_cn": [
+      "你觉得自己对这些症状的理解和觉察程度如何？"
+    ],
+    "choices": [
+      "good",
+      "fair",
+      "poor",
+      "absent"
+    ]
+  },
+  {
+    "slot_id": "sleep_insomnia",
+    "type": "ordinal",
+    "group": "common",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "入睡、早醒或睡眠维持困难有多严重？"
+    ],
+    "scale": [
+      "none",
+      "mild",
+      "moderate",
+      "severe"
+    ]
+  },
+  {
+    "slot_id": "sleep_hypersomnia",
+    "type": "ordinal",
+    "group": "common",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "嗜睡或睡得过多的情况有多明显？"
+    ],
+    "scale": [
+      "none",
+      "mild",
+      "moderate",
+      "severe"
+    ]
+  },
+  {
+    "slot_id": "appetite_change",
+    "type": "categorical",
+    "group": "common",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "最近食欲有什么变化？"
+    ],
+    "choices": [
+      "decreased",
+      "increased",
+      "fluctuating",
+      "none"
+    ]
+  },
+  {
+    "slot_id": "energy_low",
+    "type": "ordinal",
+    "group": "common",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "乏力或没精神的程度有多大？"
+    ],
+    "scale": [
+      "none",
+      "mild",
+      "moderate",
+      "severe"
+    ]
+  },
+  {
+    "slot_id": "anxiety_tension",
+    "type": "ordinal",
+    "group": "common",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "紧张、焦虑或绷着的感觉有多明显？"
+    ],
+    "scale": [
+      "none",
+      "mild",
+      "moderate",
+      "severe"
+    ]
+  },
+  {
+    "slot_id": "avoidance_behavior",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "你会不会为了避免不适而刻意回避某些场景？"
+    ]
+  },
+  {
+    "slot_id": "panic_like_surge",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "会不会突然出现一阵很强的惊恐或身体不适高峰？"
+    ]
+  },
+  {
+    "slot_id": "ritual_behavior_present",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "会不会做一些重复动作或仪式来缓解不安？"
+    ]
+  },
+  {
+    "slot_id": "anger_outbursts",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "有没有突然爆发的愤怒行为？"
+    ]
+  },
+  {
+    "slot_id": "somatic_symptom_distress",
+    "type": "ordinal",
+    "group": "common",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "身体不适让你困扰的程度有多大？"
+    ],
+    "scale": [
+      "none",
+      "mild",
+      "moderate",
+      "severe"
+    ]
+  },
+  {
+    "slot_id": "depressed_mood",
+    "type": "ordinal",
+    "group": "common",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "情绪低落的程度有多明显？"
+    ],
+    "scale": [
+      "none",
+      "mild",
+      "moderate",
+      "severe"
+    ]
+  },
+  {
+    "slot_id": "anhedonia",
+    "type": "ordinal",
+    "group": "common",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "对原来感兴趣的事情提不起兴趣的程度有多明显？"
+    ],
+    "scale": [
+      "none",
+      "mild",
+      "moderate",
+      "severe"
+    ]
+  },
+  {
+    "slot_id": "psychosis_like_symptom",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "comorbidity_pattern",
+    "question_templates_cn": [
+      "有没有明显的幻觉、妄想或现实检验受损体验？"
+    ]
+  },
+  {
+    "slot_id": "self_harm_ideation",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "comorbidity_pattern",
+    "question_templates_cn": [
+      "最近有没有伤害自己的想法？"
+    ]
+  },
+  {
+    "slot_id": "suicide_plan",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "comorbidity_pattern",
+    "question_templates_cn": [
+      "如果有轻生想法，是否想过具体怎么做？"
+    ]
+  },
+  {
+    "slot_id": "violence_ideation",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "comorbidity_pattern",
+    "question_templates_cn": [
+      "最近有没有强烈想伤害别人的想法？"
+    ]
+  },
+  {
+    "slot_id": "substance_misuse",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "comorbidity_pattern",
+    "question_templates_cn": [
+      "近期是否存在酒精或其他物质滥用？"
+    ]
+  },
+  {
+    "slot_id": "comorbid_anxiety_history",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "comorbidity_pattern",
+    "question_templates_cn": [
+      "过去是否长期有明显焦虑或紧张问题？"
+    ]
+  },
+  {
+    "slot_id": "comorbid_depression_history",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "comorbidity_pattern",
+    "question_templates_cn": [
+      "过去是否有明显持续的抑郁状态？"
+    ]
+  },
+  {
+    "slot_id": "impairment_school",
+    "type": "ordinal",
+    "group": "common",
+    "domain_hint": "functional_impairment",
+    "question_templates_cn": [
+      "这对学习或上课影响有多大？"
+    ],
+    "scale": [
+      "none",
+      "mild",
+      "moderate",
+      "severe"
+    ]
+  },
+  {
+    "slot_id": "impairment_work",
+    "type": "ordinal",
+    "group": "common",
+    "domain_hint": "functional_impairment",
+    "question_templates_cn": [
+      "这对工作效率和职责完成影响有多大？"
+    ],
+    "scale": [
+      "none",
+      "mild",
+      "moderate",
+      "severe"
+    ]
+  },
+  {
+    "slot_id": "impairment_social",
+    "type": "ordinal",
+    "group": "common",
+    "domain_hint": "functional_impairment",
+    "question_templates_cn": [
+      "这对社交和关系影响有多大？"
+    ],
+    "scale": [
+      "none",
+      "mild",
+      "moderate",
+      "severe"
+    ]
+  },
+  {
+    "slot_id": "daily_routine_impairment",
+    "type": "ordinal",
+    "group": "common",
+    "domain_hint": "functional_impairment",
+    "question_templates_cn": [
+      "日常作息和生活自理受影响程度有多大？"
+    ],
+    "scale": [
+      "none",
+      "mild",
+      "moderate",
+      "severe"
+    ]
+  },
+  {
+    "slot_id": "treatment_history",
+    "type": "categorical",
+    "group": "common",
+    "domain_hint": "treatment_response",
+    "question_templates_cn": [
+      "以前接受过哪些相关帮助或治疗？"
+    ],
+    "choices": [
+      "none",
+      "psychotherapy",
+      "medication",
+      "combined",
+      "other",
+      "unknown"
+    ]
+  },
+  {
+    "slot_id": "treatment_response",
+    "type": "categorical",
+    "group": "common",
+    "domain_hint": "treatment_response",
+    "question_templates_cn": [
+      "过去接受帮助后整体变化如何？"
+    ],
+    "choices": [
+      "improved",
+      "unchanged",
+      "worsened",
+      "unknown"
+    ]
+  },
+  {
+    "slot_id": "psychotherapy_engagement",
+    "type": "categorical",
+    "group": "common",
+    "domain_hint": "treatment_response",
+    "question_templates_cn": [
+      "你对心理治疗或访谈配合程度如何？"
+    ],
+    "choices": [
+      "none",
+      "low",
+      "moderate",
+      "high",
+      "unknown"
+    ]
+  },
+  {
+    "slot_id": "medication_adherence",
+    "type": "categorical",
+    "group": "common",
+    "domain_hint": "treatment_response",
+    "question_templates_cn": [
+      "如果用过药，服药坚持情况如何？"
+    ],
+    "choices": [
+      "none",
+      "poor",
+      "partial",
+      "good",
+      "unknown"
+    ]
+  },
+  {
+    "slot_id": "hospitalization_history",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "treatment_response",
+    "question_templates_cn": [
+      "过去是否因精神心理问题住院或急诊处置过？"
+    ]
+  },
+  {
+    "slot_id": "longstanding_pattern",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "temperament_personality",
+    "question_templates_cn": [
+      "这种模式在多年里都比较稳定吗？"
+    ]
+  },
+  {
+    "slot_id": "perfectionism_trait",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "temperament_personality",
+    "question_templates_cn": [
+      "你是否长期追求完美并难以放手？"
+    ]
+  },
+  {
+    "slot_id": "impulsivity_non_substance",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "temperament_personality",
+    "question_templates_cn": [
+      "在不涉及物质的情况下，你是否经常冲动行事？"
+    ]
+  },
+  {
+    "slot_id": "chronic_emptiness",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "temperament_personality",
+    "question_templates_cn": [
+      "你会长期感到空虚或内在空掉吗？"
+    ]
+  },
+  {
+    "slot_id": "rigidity_control_need",
+    "type": "boolean",
+    "group": "common",
+    "domain_hint": "temperament_personality",
+    "question_templates_cn": [
+      "你是否很难放手控制、很难接受灵活变化？"
+    ]
+  },
+  {
+    "slot_id": "protective_supports",
+    "type": "ordinal",
+    "group": "common",
+    "domain_hint": "environmental_risk",
+    "question_templates_cn": [
+      "身边可用的支持和保护因素有多充足？"
+    ],
+    "scale": [
+      "none",
+      "limited",
+      "moderate",
+      "strong"
+    ]
+  },
+  {
+    "slot_id": "contamination_fear",
+    "type": "boolean",
+    "group": "ocrd",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "你是否特别担心污染、脏污或感染？"
+    ]
+  },
+  {
+    "slot_id": "checking_behavior",
+    "type": "boolean",
+    "group": "ocrd",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "你会不会反复检查门窗、物品或信息是否正确？"
+    ]
+  },
+  {
+    "slot_id": "ordering_symmetry_need",
+    "type": "boolean",
+    "group": "ocrd",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "你是否很难忍受不整齐、不对称或不刚好？"
+    ]
+  },
+  {
+    "slot_id": "unwanted_taboo_thoughts",
+    "type": "boolean",
+    "group": "ocrd",
+    "domain_hint": "cog_emotion_process",
+    "question_templates_cn": [
+      "是否有让你羞耻、违背价值观但又反复冒出的想法？"
+    ]
+  },
+  {
+    "slot_id": "compulsive_time_consumption",
+    "type": "ordinal",
+    "group": "ocrd",
+    "domain_hint": "functional_impairment",
+    "question_templates_cn": [
+      "这些强迫相关症状一天会占去你多少时间？"
+    ],
+    "scale": [
+      "none",
+      "under_1h",
+      "1_to_3h",
+      "over_3h"
+    ]
+  },
+  {
+    "slot_id": "body_focused_repetitive_behavior",
+    "type": "boolean",
+    "group": "ocrd",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "会不会反复抠皮、拔毛或做其他身体聚焦的重复行为？"
+    ]
+  },
+  {
+    "slot_id": "skin_picking_behavior",
+    "type": "boolean",
+    "group": "ocrd",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "你是否会反复抠皮直到受损？"
+    ]
+  },
+  {
+    "slot_id": "hair_pulling_behavior",
+    "type": "boolean",
+    "group": "ocrd",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "你是否会反复拔头发、眉毛或体毛？"
+    ]
+  },
+  {
+    "slot_id": "body_focused_trigger_tension",
+    "type": "boolean",
+    "group": "ocrd",
+    "domain_hint": "cog_emotion_process",
+    "question_templates_cn": [
+      "在抠皮或拔毛前是否常有紧张、烦躁或难受感？"
+    ]
+  },
+  {
+    "slot_id": "appearance_preoccupation",
+    "type": "boolean",
+    "group": "ocrd",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "你是否过度担心外貌上的某个缺陷？"
+    ]
+  },
+  {
+    "slot_id": "perceived_defect_focus_area",
+    "type": "categorical",
+    "group": "ocrd",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "如果担心外貌，主要集中在哪个部位？"
+    ],
+    "choices": [
+      "face",
+      "skin",
+      "hair",
+      "body_shape",
+      "multiple",
+      "other",
+      "unknown"
+    ]
+  },
+  {
+    "slot_id": "mirror_checking",
+    "type": "boolean",
+    "group": "ocrd",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "你会不会反复照镜子或查看外貌？"
+    ]
+  },
+  {
+    "slot_id": "camouflaging_behavior",
+    "type": "boolean",
+    "group": "ocrd",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "你会不会用化妆、衣物或姿势遮掩在意的部位？"
+    ]
+  },
+  {
+    "slot_id": "appearance_comparison_behavior",
+    "type": "boolean",
+    "group": "ocrd",
+    "domain_hint": "cog_emotion_process",
+    "question_templates_cn": [
+      "你会不会反复把自己的外貌和别人比较？"
+    ]
+  },
+  {
+    "slot_id": "jealousy_preoccupation",
+    "type": "boolean",
+    "group": "ocrd",
+    "domain_hint": "cog_emotion_process",
+    "question_templates_cn": [
+      "你是否会反复陷入伴侣不忠或背叛的怀疑中？"
+    ]
+  },
+  {
+    "slot_id": "partner_checking_behavior",
+    "type": "boolean",
+    "group": "ocrd",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "你会不会反复查看伴侣的手机、行程或证据来确认？"
+    ]
+  },
+  {
+    "slot_id": "repetitive_confession_seeking",
+    "type": "boolean",
+    "group": "ocrd",
+    "domain_hint": "cog_emotion_process",
+    "question_templates_cn": [
+      "你会不会反复要求别人解释、保证或承认某些事情？"
+    ]
+  },
+  {
+    "slot_id": "hoarding_difficulty_discarding",
+    "type": "boolean",
+    "group": "ocrd",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "你是否很难丢弃物品，即使别人觉得没必要保留？"
+    ]
+  },
+  {
+    "slot_id": "adjustment_related_stressor_timing",
+    "type": "categorical",
+    "group": "tsr",
+    "domain_hint": "course_stability",
+    "question_templates_cn": [
+      "症状和压力事件在时间上是否紧密相关？"
+    ],
+    "choices": [
+      "clear_link",
+      "possible_link",
+      "no_link",
+      "unknown"
+    ]
+  },
+  {
+    "slot_id": "post_stressor_maladaptation",
+    "type": "boolean",
+    "group": "tsr",
+    "domain_hint": "functional_impairment",
+    "question_templates_cn": [
+      "压力事件之后，你的适应是否明显变差？"
+    ]
+  },
+  {
+    "slot_id": "stressor_resolution_status",
+    "type": "categorical",
+    "group": "tsr",
+    "domain_hint": "environmental_risk",
+    "question_templates_cn": [
+      "引发问题的压力事件目前是否已经结束？"
+    ],
+    "choices": [
+      "resolved",
+      "ongoing",
+      "partial",
+      "unknown"
+    ]
+  },
+  {
+    "slot_id": "grief_yearning",
+    "type": "boolean",
+    "group": "tsr",
+    "domain_hint": "cog_emotion_process",
+    "question_templates_cn": [
+      "你是否持续强烈地思念或渴望失去的人？"
+    ]
+  },
+  {
+    "slot_id": "grief_identity_disruption",
+    "type": "boolean",
+    "group": "tsr",
+    "domain_hint": "temperament_personality",
+    "question_templates_cn": [
+      "失去之后，你会不会觉得自己的一部分也不见了？"
+    ]
+  },
+  {
+    "slot_id": "grief_avoidance_reminders",
+    "type": "boolean",
+    "group": "tsr",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "你会不会刻意回避和逝者相关的提醒物？"
+    ]
+  },
+  {
+    "slot_id": "grief_emotional_pain",
+    "type": "ordinal",
+    "group": "tsr",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "与丧失相关的情感痛苦有多强？"
+    ],
+    "scale": [
+      "none",
+      "mild",
+      "moderate",
+      "severe"
+    ]
+  },
+  {
+    "slot_id": "grief_loneliness",
+    "type": "ordinal",
+    "group": "tsr",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "失去之后的孤独感有多明显？"
+    ],
+    "scale": [
+      "none",
+      "mild",
+      "moderate",
+      "severe"
+    ]
+  },
+  {
+    "slot_id": "trauma_reexperiencing",
+    "type": "boolean",
+    "group": "tsr",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "你会不会反复重现那段经历，像又发生了一样？"
+    ]
+  },
+  {
+    "slot_id": "hypervigilance",
+    "type": "boolean",
+    "group": "tsr",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "你是否一直保持警觉、容易受惊？"
+    ]
+  },
+  {
+    "slot_id": "trauma_avoidance",
+    "type": "boolean",
+    "group": "tsr",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "你是否会刻意回避和创伤经历相关的人、地、事？"
+    ]
+  },
+  {
+    "slot_id": "exaggerated_startle",
+    "type": "boolean",
+    "group": "tsr",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "你是否会对突然的声音或刺激反应过大？"
+    ]
+  },
+  {
+    "slot_id": "health_anxiety",
+    "type": "boolean",
+    "group": "ssrd",
+    "domain_hint": "cog_emotion_process",
+    "question_templates_cn": [
+      "你是否经常担心自己得了严重躯体疾病？"
+    ]
+  },
+  {
+    "slot_id": "doctor_shopping",
+    "type": "boolean",
+    "group": "ssrd",
+    "domain_hint": "functional_impairment",
+    "question_templates_cn": [
+      "你是否因为这些不适反复更换医院或医生求证？"
+    ]
+  },
+  {
+    "slot_id": "symptom_monitoring",
+    "type": "boolean",
+    "group": "ssrd",
+    "domain_hint": "cog_emotion_process",
+    "question_templates_cn": [
+      "你会不会不断留意身体感觉并反复检查？"
+    ]
+  },
+  {
+    "slot_id": "reassurance_relief_short_lived",
+    "type": "boolean",
+    "group": "ssrd",
+    "domain_hint": "treatment_response",
+    "question_templates_cn": [
+      "检查正常后，你安心的时间是否很短？"
+    ]
+  },
+  {
+    "slot_id": "multiple_somatic_sites",
+    "type": "boolean",
+    "group": "ssrd",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "身体不适是否涉及多个部位或系统？"
+    ]
+  },
+  {
+    "slot_id": "disproportionate_health_behaviors",
+    "type": "boolean",
+    "group": "ssrd",
+    "domain_hint": "functional_impairment",
+    "question_templates_cn": [
+      "你是否因为担心健康而花大量时间或精力做相关行为？"
+    ]
+  },
+  {
+    "slot_id": "functional_neurological_like_symptom",
+    "type": "boolean",
+    "group": "ssrd",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "是否出现过难以用器质性病变解释的神经系统样症状？"
+    ]
+  },
+  {
+    "slot_id": "symptom_persistence_despite_negative_tests",
+    "type": "boolean",
+    "group": "ssrd",
+    "domain_hint": "course_stability",
+    "question_templates_cn": [
+      "尽管检查多次无明显异常，症状困扰仍持续吗？"
+    ]
+  },
+  {
+    "slot_id": "menstrual_cycle_link",
+    "type": "categorical",
+    "group": "dep",
+    "domain_hint": "course_stability",
+    "question_templates_cn": [
+      "这些情绪或症状和月经周期有没有规律关系？"
+    ],
+    "choices": [
+      "no_link",
+      "suspected",
+      "clear_link",
+      "unknown"
+    ]
+  },
+  {
+    "slot_id": "luteal_phase_worsening",
+    "type": "boolean",
+    "group": "dep",
+    "domain_hint": "course_stability",
+    "question_templates_cn": [
+      "症状是否主要在月经来前那一段明显加重？"
+    ]
+  },
+  {
+    "slot_id": "symptom_relief_post_menses",
+    "type": "boolean",
+    "group": "dep",
+    "domain_hint": "course_stability",
+    "question_templates_cn": [
+      "月经来后症状会不会明显减轻？"
+    ]
+  },
+  {
+    "slot_id": "affective_lability_premenstrual",
+    "type": "boolean",
+    "group": "dep",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "经前是否更容易情绪波动、忽高忽低？"
+    ]
+  },
+  {
+    "slot_id": "irritability_premenstrual",
+    "type": "boolean",
+    "group": "dep",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "经前是否特别容易烦躁或生气？"
+    ]
+  },
+  {
+    "slot_id": "physical_bloating_premenstrual",
+    "type": "boolean",
+    "group": "dep",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "经前是否有明显腹胀或身体肿胀感？"
+    ]
+  },
+  {
+    "slot_id": "breast_tenderness_premenstrual",
+    "type": "boolean",
+    "group": "dep",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "经前是否有乳房胀痛或压痛？"
+    ]
+  },
+  {
+    "slot_id": "cycle_tracking_available",
+    "type": "boolean",
+    "group": "dep",
+    "domain_hint": "course_stability",
+    "question_templates_cn": [
+      "你是否有记录周期和症状变化的习惯？"
+    ]
+  },
+  {
+    "slot_id": "anger_trigger_triviality",
+    "type": "boolean",
+    "group": "diccd",
+    "domain_hint": "cog_emotion_process",
+    "question_templates_cn": [
+      "你的暴怒是否常常由很小的事情引发？"
+    ]
+  },
+  {
+    "slot_id": "aggression_verbal",
+    "type": "boolean",
+    "group": "diccd",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "发作时是否会大吼、辱骂或言语攻击？"
+    ]
+  },
+  {
+    "slot_id": "aggression_property_damage",
+    "type": "boolean",
+    "group": "diccd",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "发作时是否会摔东西或破坏物品？"
+    ]
+  },
+  {
+    "slot_id": "aggression_physical",
+    "type": "boolean",
+    "group": "diccd",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "发作时是否会推搡、打人或出现身体攻击？"
+    ]
+  },
+  {
+    "slot_id": "outburst_premeditation",
+    "type": "boolean",
+    "group": "diccd",
+    "domain_hint": "cog_emotion_process",
+    "question_templates_cn": [
+      "这些爆发通常是提前计划好的还是当下冲动的？"
+    ]
+  },
+  {
+    "slot_id": "outburst_remorse",
+    "type": "boolean",
+    "group": "diccd",
+    "domain_hint": "cog_emotion_process",
+    "question_templates_cn": [
+      "发作之后你是否常常后悔或自责？"
+    ]
+  },
+  {
+    "slot_id": "outburst_disproportionate",
+    "type": "boolean",
+    "group": "diccd",
+    "domain_hint": "symptom_profile",
+    "question_templates_cn": [
+      "你的反应是否明显超过事情本身的严重程度？"
+    ]
+  },
+  {
+    "slot_id": "abandonment_sensitivity",
+    "type": "boolean",
+    "group": "pd",
+    "domain_hint": "temperament_personality",
+    "question_templates_cn": [
+      "你是否特别害怕被抛下、被忽视或被离开？"
+    ]
+  },
+  {
+    "slot_id": "relationship_instability",
+    "type": "boolean",
+    "group": "pd",
+    "domain_hint": "functional_impairment",
+    "question_templates_cn": [
+      "亲密关系是否经常忽好忽坏、很不稳定？"
+    ]
+  },
+  {
+    "slot_id": "identity_disturbance",
+    "type": "boolean",
+    "group": "pd",
+    "domain_hint": "temperament_personality",
+    "question_templates_cn": [
+      "你是否常常不知道自己到底是什么样的人、想成为什么样的人？"
+    ]
+  },
+  {
+    "slot_id": "transient_paranoia_stress_related",
+    "type": "boolean",
+    "group": "pd",
+    "domain_hint": "cog_emotion_process",
+    "question_templates_cn": [
+      "压力大时会不会短暂地非常怀疑别人或觉得周围不真实？"
+    ]
+  },
+  {
+    "slot_id": "rigidity_morality",
+    "type": "boolean",
+    "group": "pd",
+    "domain_hint": "temperament_personality",
+    "question_templates_cn": [
+      "你是否对规则、道德或做法有非常僵硬的坚持？"
+    ]
+  },
+  {
+    "slot_id": "reluctance_delegate",
+    "type": "boolean",
+    "group": "pd",
+    "domain_hint": "functional_impairment",
+    "question_templates_cn": [
+      "你是否很难把事情交给别人做，除非完全按你的方式？"
+    ]
+  },
+  {
+    "slot_id": "interpersonal_control_conflict",
+    "type": "boolean",
+    "group": "pd",
+    "domain_hint": "functional_impairment",
+    "question_templates_cn": [
+      "你对控制和标准的坚持是否经常造成关系冲突？"
+    ]
+  }
+]

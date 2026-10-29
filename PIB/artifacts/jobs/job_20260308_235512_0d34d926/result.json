@@ -1,0 +1,283 @@
+{
+  "job_id": "job_20260308_235512_0d34d926",
+  "job_type": "validate_current",
+  "status": "succeeded",
+  "exit_code": 0,
+  "structured_errors": [
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "Validation",
+      "message": "Validation passed"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "Hard",
+      "message": "Hard constraints"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "unknown",
+      "message": "slot_count=120"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "unknown",
+      "message": "dynamic.max_turns_cap=15"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "unknown",
+      "message": "os_ocrd_subtypes_count=3"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "unknown",
+      "message": "config=pib_config.yaml"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "Cases",
+      "message": "Cases: 110"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "Rubrics",
+      "message": "Rubrics: 110"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "Slots",
+      "message": "Slots in ontology: 120"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "SVCL",
+      "message": "SVCL domains: 11"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "Module",
+      "message": "Module Distribution"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "unknown",
+      "message": "-------------------"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "DEP",
+      "message": "DEP: 10"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "DICCD",
+      "message": "DICCD: 10"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "OCRD",
+      "message": "OCRD: 30"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "OTHER",
+      "message": "OTHER: 10"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "PD",
+      "message": "PD: 20"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "SSRD",
+      "message": "SSRD: 10"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "TSR",
+      "message": "TSR: 20"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "Label",
+      "message": "Label Distribution"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "unknown",
+      "message": "------------------"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "ADJ",
+      "message": "ADJ: 10"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "BDD",
+      "message": "BDD: 10"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "BPD",
+      "message": "BPD: 10"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "IED",
+      "message": "IED: 10"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "OCD",
+      "message": "OCD: 10"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "OCPD",
+      "message": "OCPD: 10"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "OS_OCRD",
+      "message": "OS_OCRD: 10"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "OTHER",
+      "message": "OTHER: 10"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "PGD",
+      "message": "PGD: 10"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "PMDD",
+      "message": "PMDD: 10"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "SSD",
+      "message": "SSD: 10"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "Ambiguity",
+      "message": "Ambiguity Distribution"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "unknown",
+      "message": "----------------------"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "ambiguous",
+      "message": "ambiguous: 44"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "unambiguous",
+      "message": "unambiguous: 66"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "Required",
+      "message": "Required SVCL Coverage"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "unknown",
+      "message": "----------------------"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "cog_emotion_process",
+      "message": "cog_emotion_process: 60"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "comorbidity_pattern",
+      "message": "comorbidity_pattern: 22"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "course_stability",
+      "message": "course_stability: 90"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "environmental_risk",
+      "message": "environmental_risk: 30"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "functional_impairment",
+      "message": "functional_impairment: 110"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "symptom_profile",
+      "message": "symptom_profile: 60"
+    },
+    {
+      "scope": "validation",
+      "case_id": null,
+      "field": "temperament_personality",
+      "message": "temperament_personality: 20"
+    }
+  ],
+  "raw_summary": {
+    "stdout_tail": "Validation passed\nHard constraints\n- slot_count=120\n- dynamic.max_turns_cap=15\n- os_ocrd_subtypes_count=3\n- config=pib_config.yaml\nCases: 110\nRubrics: 110\nSlots in ontology: 120\nSVCL domains: 11\n\nModule Distribution\n-------------------\nDEP: 10\nDICCD: 10\nOCRD: 30\nOTHER: 10\nPD: 20\nSSRD: 10\nTSR: 20\n\nLabel Distribution\n------------------\nADJ: 10\nBDD: 10\nBPD: 10\nIED: 10\nOCD: 10\nOCPD: 10\nOS_OCRD: 10\nOTHER: 10\nPGD: 10\nPMDD: 10\nSSD: 10\n\nAmbiguity Distribution\n----------------------\nambiguous: 44\nunambiguous: 66\n\nRequired SVCL Coverage\n----------------------\ncog_emotion_process: 60\ncomorbidity_pattern: 22\ncourse_stability: 90\nenvironmental_risk: 30\nfunctional_impairment: 110\nsymptom_profile: 60\ntemperament_personality: 20\n",
+    "stderr_tail": ""
+  },
+  "target_release_id": "v1.1.0-rc1"
+}

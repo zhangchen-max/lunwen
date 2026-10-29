@@ -1,0 +1,20 @@
+{
+  "job_id": "job_20260309_045551_7c42b3d5",
+  "run_id": "run_20260309_045551_be9ba6b6",
+  "job_type": "run_static",
+  "status": "succeeded",
+  "exit_code": 0,
+  "structured_errors": [],
+  "raw_summary": {
+    "stdout_tail": "Static run complete: results/static/heuristic/run_20260309_045551_be9ba6b6.jsonl\n",
+    "stderr_tail": "\nstatic:   0%|          | 0/22 [00:00<?, ?it/s]\nstatic: 100%|██████████| 22/22 [00:00<00:00, 12835.54it/s]\n"
+  },
+  "target_release_id": "v1.1.0-rc1",
+  "run": {
+    "run_id": "run_20260309_045551_be9ba6b6",
+    "status": "completed",
+    "results_root": "results/static/heuristic/run_20260309_045551_be9ba6b6/run_001/",
+    "metrics_path": "results/static/heuristic/run_20260309_045551_be9ba6b6/run_001/metrics.json",
+    "summary_path": "results/static/heuristic/run_20260309_045551_be9ba6b6/run_001/summary.csv"
+  }
+}

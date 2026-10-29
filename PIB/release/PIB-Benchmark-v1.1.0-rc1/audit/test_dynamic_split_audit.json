@@ -1,0 +1,7 @@
+{
+  "path": "results/dynamic/test_dynamic.jsonl",
+  "n_rows": 22,
+  "split_values": [
+    "test"
+  ]
+}

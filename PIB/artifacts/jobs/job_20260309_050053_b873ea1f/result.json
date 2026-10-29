@@ -1,0 +1,20 @@
+{
+  "job_id": "job_20260309_050053_b873ea1f",
+  "run_id": "run_20260309_050053_f3a6c6a0",
+  "job_type": "run_dynamic",
+  "status": "succeeded",
+  "exit_code": 0,
+  "structured_errors": [],
+  "raw_summary": {
+    "stdout_tail": "Dynamic run complete: results/dynamic/dummy/run_20260309_050053_f3a6c6a0.jsonl\n",
+    "stderr_tail": "\ndynamic:   0%|          | 0/22 [00:00<?, ?it/s]\ndynamic: 100%|██████████| 22/22 [00:00<00:00, 1440.82it/s]\n"
+  },
+  "target_release_id": "v1.1.0-rc1",
+  "run": {
+    "run_id": "run_20260309_050053_f3a6c6a0",
+    "status": "completed",
+    "results_root": "results/dynamic/dummy/run_20260309_050053_f3a6c6a0/run_001/",
+    "metrics_path": "results/dynamic/dummy/run_20260309_050053_f3a6c6a0/run_001/metrics.json",
+    "summary_path": "results/dynamic/dummy/run_20260309_050053_f3a6c6a0/run_001/summary.csv"
+  }
+}

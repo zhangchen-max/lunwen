@@ -1,0 +1,93 @@
+{
+  "model_label": "DeepSeek-V4-Pro",
+  "model_id": "deepseek-v4-pro",
+  "eval_date": "2026-06-23",
+  "mode": "dynamic",
+  "n_cases": 110,
+  "top1": 0.6545454545454545,
+  "top3": 0.6636363636363637,
+  "must_ask_hit_rate": 0.7113636363636363,
+  "svcl_domain_coverage": 0.6833333333333333,
+  "avg_turns": 4.663636363636364,
+  "parse_error_rate": 0.36363636363636365,
+  "cf1_risk": "Low",
+  "per_label": {
+    "ADJ": {
+      "n": 10,
+      "top1": 0.5,
+      "must_ask_hit_rate": 0.5,
+      "svcl_domain_coverage": 0.5,
+      "avg_turns": 2.8
+    },
+    "BDD": {
+      "n": 10,
+      "top1": 1.0,
+      "must_ask_hit_rate": 1.0,
+      "svcl_domain_coverage": 1.0,
+      "avg_turns": 4.9
+    },
+    "BPD": {
+      "n": 10,
+      "top1": 0.5,
+      "must_ask_hit_rate": 0.6,
+      "svcl_domain_coverage": 0.425,
+      "avg_turns": 3.7
+    },
+    "IED": {
+      "n": 10,
+      "top1": 0.5,
+      "must_ask_hit_rate": 0.5,
+      "svcl_domain_coverage": 0.5,
+      "avg_turns": 3.4
+    },
+    "OCD": {
+      "n": 10,
+      "top1": 1.0,
+      "must_ask_hit_rate": 1.0,
+      "svcl_domain_coverage": 1.0,
+      "avg_turns": 6.1
+    },
+    "OCPD": {
+      "n": 10,
+      "top1": 0.8,
+      "must_ask_hit_rate": 1.0,
+      "svcl_domain_coverage": 1.0,
+      "avg_turns": 8.5
+    },
+    "OS_OCRD": {
+      "n": 10,
+      "top1": 0.4,
+      "must_ask_hit_rate": 0.925,
+      "svcl_domain_coverage": 0.825,
+      "avg_turns": 4.8
+    },
+    "OTHER": {
+      "n": 10,
+      "top1": 0.9,
+      "must_ask_hit_rate": 0.6,
+      "svcl_domain_coverage": 0.6,
+      "avg_turns": 6.8
+    },
+    "PGD": {
+      "n": 10,
+      "top1": 0.5,
+      "must_ask_hit_rate": 0.5,
+      "svcl_domain_coverage": 0.5,
+      "avg_turns": 2.7
+    },
+    "PMDD": {
+      "n": 10,
+      "top1": 0.5,
+      "must_ask_hit_rate": 0.5,
+      "svcl_domain_coverage": 0.4666666666666667,
+      "avg_turns": 3.4
+    },
+    "SSD": {
+      "n": 10,
+      "top1": 0.6,
+      "must_ask_hit_rate": 0.7,
+      "svcl_domain_coverage": 0.7,
+      "avg_turns": 4.2
+    }
+  }
+}

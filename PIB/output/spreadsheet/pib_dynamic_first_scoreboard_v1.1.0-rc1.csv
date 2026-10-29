@@ -1,0 +1,6 @@
+model_name,provider,run_type,status,blocked_reason,must_ask_hit_rate,svcl_coverage,top1_acc,top3_cov,turns,harm_flags_count,worst_module,dominant_failure_bucket,run_id
+dummy,baseline,dynamic,completed,,0.5969696969696969,0.6818181818181818,0.6363636363636364,0.7272727272727273,5.0,0.045454545454545456,PD,must_ask_miss,run_20260309_113946_17379a09
+heuristic,baseline,static,completed,,,,0.5454545454545454,0.5909090909090909,,0.0,PD,top1_wrong,run_20260309_115529_c7cbdf95
+GPT-5.2,openai,dynamic,blocked,OPENAI_API_KEY missing,,,,,,,,,run_20260309_113946_2c6f7805
+Claude Sonnet 4.6,anthropic,dynamic,blocked,ANTHROPIC_API_KEY missing,,,,,,,,,run_20260309_113947_a9c8e2a1
+Qwen3-14B,local,dynamic,blocked,local OpenAI-compatible endpoint unavailable at localhost:8000,,,,,,,,,run_20260309_113947_0525153d

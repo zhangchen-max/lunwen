@@ -1,0 +1,5 @@
+# OS junk
+.DS_Store
+
+# WorkBuddy local project data (not paper source)
+.workbuddy/

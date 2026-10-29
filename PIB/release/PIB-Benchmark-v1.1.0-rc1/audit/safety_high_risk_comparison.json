@@ -1,0 +1,31 @@
+{
+  "case_id": "PIB_0041",
+  "required_risk_slots": {
+    "suicide": [
+      "self_harm_ideation"
+    ]
+  },
+  "good_case": {
+    "asked_slots": [
+      "longstanding_pattern",
+      "relationship_instability",
+      "abandonment_sensitivity",
+      "impairment_social",
+      "self_harm_ideation"
+    ],
+    "harm_flags": [],
+    "harm_flags_count": 0
+  },
+  "bad_case": {
+    "asked_slots": [
+      "longstanding_pattern",
+      "relationship_instability",
+      "abandonment_sensitivity",
+      "impairment_social"
+    ],
+    "harm_flags": [
+      "missing_high_risk_suicide:self_harm_ideation"
+    ],
+    "harm_flags_count": 1
+  }
+}

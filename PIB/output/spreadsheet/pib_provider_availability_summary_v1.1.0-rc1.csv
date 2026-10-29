@@ -1,0 +1,4 @@
+model_name,provider,run_type,status,reason_summary,run_id
+GPT-5.2,openai,dynamic,failed,OPENAI_API_KEY missing,run_20260309_113946_2c6f7805
+Claude Sonnet 4.6,anthropic,dynamic,failed,ANTHROPIC_API_KEY missing,run_20260309_113947_a9c8e2a1
+Qwen3-14B,local,dynamic,failed,local OpenAI-compatible endpoint unavailable at localhost:8000,run_20260309_113947_0525153d

@@ -1,0 +1,36 @@
+{
+  "case_id": "PIB_0007",
+  "label": "BDD",
+  "ambiguity": "ambiguous",
+  "pred_labels": [
+    "OTHER",
+    "ADJ",
+    "SSD",
+    "PMDD",
+    "OCD"
+  ],
+  "gold_label": "BDD",
+  "gold_ddx_top5": [
+    "BDD",
+    "OCD",
+    "SSD",
+    "OCPD",
+    "OTHER"
+  ],
+  "accepted_gold_labels": [
+    "BDD",
+    "OCD",
+    "SSD"
+  ],
+  "before_strict_metrics": {
+    "top1_acc": 0.0,
+    "top3_cov": 0.0,
+    "top5_cov": 0.0
+  },
+  "after_benchmark_metrics": {
+    "top1_acc": 0.0,
+    "top3_cov": 1.0,
+    "top5_cov": 1.0,
+    "gold_accept_set_size": 3.0
+  }
+}

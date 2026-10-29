@@ -1,0 +1,17 @@
+{
+  "level_a": [
+    "family_aggregation",
+    "environmental_risk",
+    "temperament_personality",
+    "cog_emotion_process",
+    "symptom_profile",
+    "course_stability",
+    "comorbidity_pattern",
+    "functional_impairment",
+    "treatment_response"
+  ],
+  "level_b": [
+    "biomarkers_neural",
+    "genetic_risk"
+  ]
+}

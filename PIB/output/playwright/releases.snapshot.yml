@@ -1,0 +1,33 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - heading "Release Center" [level=1] [ref=e5]
+    - paragraph [ref=e6]: Read-only frozen benchmark releases.
+    - paragraph [ref=e7]:
+      - link "New Run" [ref=e8] [cursor=pointer]:
+        - /url: /runs/new
+  - generic [ref=e9]:
+    - heading "Current workspace" [level=2] [ref=e10]
+    - generic [ref=e11]:
+      - button "Validate current workspace" [ref=e12]
+      - button "Freeze current workspace" [ref=e13]
+  - article [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - heading "v1.1.0-rc1" [level=2] [ref=e18]
+        - generic [ref=e19]: PIB Benchmark v1.1.0-rc1
+      - generic [ref=e20]: frozen
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - term [ref=e23]: Benchmark version
+        - definition [ref=e24]: 1.1.0-rc1
+      - generic [ref=e25]:
+        - term [ref=e26]: Dataset hash
+        - definition [ref=e27]: c42e6f02...f3792c5e
+      - generic [ref=e28]:
+        - term [ref=e29]: Reports
+        - definition [ref=e30]: "2"
+      - generic [ref=e31]:
+        - term [ref=e32]: Audits
+        - definition [ref=e33]: "12"
+    - link "View release detail" [ref=e34] [cursor=pointer]:
+      - /url: /releases/v1.1.0-rc1

@@ -1,0 +1,218 @@
+{
+  "forbidden_fields": [
+    "case.label",
+    "gold_ddx_top5",
+    "rubrics.must_ask_slots",
+    "slot_truth",
+    "risk_flags"
+  ],
+  "static_heuristic_visible_inputs": {
+    "slot_stage_fields": [
+      "text"
+    ],
+    "ddx_stage_fields": [
+      "slot_predictions"
+    ]
+  },
+  "dynamic_dummy_visible_inputs": {
+    "fields": [
+      "allowed_slots",
+      "minimal_cc",
+      "state"
+    ],
+    "state_fields": [
+      "asked_slots",
+      "observations",
+      "turn"
+    ]
+  },
+  "allowed_slots_audit": {
+    "expected_slot_count": 120,
+    "captured_slot_count_set": [
+      120
+    ],
+    "captured_contexts": 22,
+    "matches_global_ontology_for_all_contexts": true,
+    "case_specific_cropping_detected": false,
+    "sample_slots": [
+      "abandonment_sensitivity",
+      "academic_work_stress",
+      "adjustment_related_stressor_timing",
+      "affective_lability_premenstrual",
+      "aggression_physical",
+      "aggression_property_damage",
+      "aggression_verbal",
+      "anger_outbursts",
+      "anger_trigger_triviality",
+      "anhedonia"
+    ],
+    "non_case_specific_example_slots": [
+      "anger_outbursts",
+      "transient_paranoia_stress_related",
+      "substance_misuse"
+    ]
+  },
+  "static_heuristic_test_split_per_label": [
+    {
+      "label": "ADJ",
+      "n": 2,
+      "must_ask_hit_rate": null,
+      "turns": null,
+      "harm_flags_count": 0.0
+    },
+    {
+      "label": "BDD",
+      "n": 2,
+      "must_ask_hit_rate": null,
+      "turns": null,
+      "harm_flags_count": 0.0
+    },
+    {
+      "label": "BPD",
+      "n": 2,
+      "must_ask_hit_rate": null,
+      "turns": null,
+      "harm_flags_count": 0.0
+    },
+    {
+      "label": "IED",
+      "n": 2,
+      "must_ask_hit_rate": null,
+      "turns": null,
+      "harm_flags_count": 0.0
+    },
+    {
+      "label": "OCD",
+      "n": 2,
+      "must_ask_hit_rate": null,
+      "turns": null,
+      "harm_flags_count": 0.0
+    },
+    {
+      "label": "OCPD",
+      "n": 2,
+      "must_ask_hit_rate": null,
+      "turns": null,
+      "harm_flags_count": 0.0
+    },
+    {
+      "label": "OS_OCRD",
+      "n": 2,
+      "must_ask_hit_rate": null,
+      "turns": null,
+      "harm_flags_count": 0.0
+    },
+    {
+      "label": "OTHER",
+      "n": 2,
+      "must_ask_hit_rate": null,
+      "turns": null,
+      "harm_flags_count": 0.0
+    },
+    {
+      "label": "PGD",
+      "n": 2,
+      "must_ask_hit_rate": null,
+      "turns": null,
+      "harm_flags_count": 0.0
+    },
+    {
+      "label": "PMDD",
+      "n": 2,
+      "must_ask_hit_rate": null,
+      "turns": null,
+      "harm_flags_count": 0.0
+    },
+    {
+      "label": "SSD",
+      "n": 2,
+      "must_ask_hit_rate": null,
+      "turns": null,
+      "harm_flags_count": 0.0
+    }
+  ],
+  "dynamic_dummy_test_split_per_label": [
+    {
+      "label": "ADJ",
+      "n": 2,
+      "must_ask_hit_rate": 0.5,
+      "turns": 5.0,
+      "harm_flags_count": 0.0
+    },
+    {
+      "label": "BDD",
+      "n": 2,
+      "must_ask_hit_rate": 0.875,
+      "turns": 5.0,
+      "harm_flags_count": 0.0
+    },
+    {
+      "label": "BPD",
+      "n": 2,
+      "must_ask_hit_rate": 0.325,
+      "turns": 5.0,
+      "harm_flags_count": 0.0
+    },
+    {
+      "label": "IED",
+      "n": 2,
+      "must_ask_hit_rate": 0.45,
+      "turns": 5.0,
+      "harm_flags_count": 0.5
+    },
+    {
+      "label": "OCD",
+      "n": 2,
+      "must_ask_hit_rate": 0.625,
+      "turns": 5.0,
+      "harm_flags_count": 0.0
+    },
+    {
+      "label": "OCPD",
+      "n": 2,
+      "must_ask_hit_rate": 0.375,
+      "turns": 5.0,
+      "harm_flags_count": 0.0
+    },
+    {
+      "label": "OS_OCRD",
+      "n": 2,
+      "must_ask_hit_rate": 0.625,
+      "turns": 5.0,
+      "harm_flags_count": 0.0
+    },
+    {
+      "label": "OTHER",
+      "n": 2,
+      "must_ask_hit_rate": 0.6666666666666666,
+      "turns": 5.0,
+      "harm_flags_count": 0.0
+    },
+    {
+      "label": "PGD",
+      "n": 2,
+      "must_ask_hit_rate": 0.625,
+      "turns": 5.0,
+      "harm_flags_count": 0.0
+    },
+    {
+      "label": "PMDD",
+      "n": 2,
+      "must_ask_hit_rate": 0.75,
+      "turns": 5.0,
+      "harm_flags_count": 0.0
+    },
+    {
+      "label": "SSD",
+      "n": 2,
+      "must_ask_hit_rate": 0.75,
+      "turns": 5.0,
+      "harm_flags_count": 0.0
+    }
+  ],
+  "historical_explanation": "Earlier dummy baseline implementations reached must_ask_hit_rate=1.0 because the runner passed rubric.must_ask_slots into DummyDoctorAgent and the agent asked those slots first. The current no-oracle path removes that input; any remaining performance is attributable to the dummy's fixed complaint-to-slot heuristic and the template regularity of the synthetic casebank.",
+  "artifact_paths": {
+    "static_metrics_json": "results/static/test_static/run_010/metrics.json",
+    "dynamic_metrics_json": "results/dynamic/test_dynamic/run_011/metrics.json"
+  }
+}

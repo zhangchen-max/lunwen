@@ -1,0 +1,3 @@
+DEPRECATED for release candidate 1.1.0-rc1.
+Reason: pre-no-oracle-fix dynamic dummy consumed rubric.must_ask_slots and is not a valid pure baseline.
+Use results/dynamic/test_dynamic/run_005+ instead.

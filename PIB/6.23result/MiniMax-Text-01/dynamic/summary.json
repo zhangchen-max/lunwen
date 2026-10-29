@@ -1,0 +1,93 @@
+{
+  "model_label": "MiniMax-Text-01",
+  "model_id": "MiniMax-Text-01",
+  "eval_date": "2026-06-24",
+  "mode": "dynamic",
+  "n_cases": 110,
+  "top1": 0.8090909090909091,
+  "top3": 0.8545454545454545,
+  "must_ask_hit_rate": 1.0,
+  "svcl_domain_coverage": 0.9727272727272728,
+  "avg_turns": 10.781818181818181,
+  "parse_error_rate": 0.0,
+  "cf1_risk": "Low",
+  "per_label": {
+    "ADJ": {
+      "n": 10,
+      "top1": 1.0,
+      "must_ask_hit_rate": 1.0,
+      "svcl_domain_coverage": 1.0,
+      "avg_turns": 9.9
+    },
+    "BDD": {
+      "n": 10,
+      "top1": 1.0,
+      "must_ask_hit_rate": 1.0,
+      "svcl_domain_coverage": 1.0,
+      "avg_turns": 8.9
+    },
+    "BPD": {
+      "n": 10,
+      "top1": 0.9,
+      "must_ask_hit_rate": 1.0,
+      "svcl_domain_coverage": 0.725,
+      "avg_turns": 8.3
+    },
+    "IED": {
+      "n": 10,
+      "top1": 1.0,
+      "must_ask_hit_rate": 1.0,
+      "svcl_domain_coverage": 1.0,
+      "avg_turns": 11.5
+    },
+    "OCD": {
+      "n": 10,
+      "top1": 1.0,
+      "must_ask_hit_rate": 1.0,
+      "svcl_domain_coverage": 1.0,
+      "avg_turns": 11.1
+    },
+    "OCPD": {
+      "n": 10,
+      "top1": 0.6,
+      "must_ask_hit_rate": 1.0,
+      "svcl_domain_coverage": 1.0,
+      "avg_turns": 10.7
+    },
+    "OS_OCRD": {
+      "n": 10,
+      "top1": 0.5,
+      "must_ask_hit_rate": 1.0,
+      "svcl_domain_coverage": 0.975,
+      "avg_turns": 11.6
+    },
+    "OTHER": {
+      "n": 10,
+      "top1": 0.5,
+      "must_ask_hit_rate": 1.0,
+      "svcl_domain_coverage": 1.0,
+      "avg_turns": 11.6
+    },
+    "PGD": {
+      "n": 10,
+      "top1": 1.0,
+      "must_ask_hit_rate": 1.0,
+      "svcl_domain_coverage": 1.0,
+      "avg_turns": 10.2
+    },
+    "PMDD": {
+      "n": 10,
+      "top1": 1.0,
+      "must_ask_hit_rate": 1.0,
+      "svcl_domain_coverage": 1.0,
+      "avg_turns": 12.2
+    },
+    "SSD": {
+      "n": 10,
+      "top1": 0.4,
+      "must_ask_hit_rate": 1.0,
+      "svcl_domain_coverage": 1.0,
+      "avg_turns": 12.6
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "job_id": "job_20260309_113947_f2274919",
+  "run_id": "run_20260309_113947_0525153d",
+  "job_type": "run_dynamic",
+  "status": "failed",
+  "exit_code": 1,
+  "structured_errors": [],
+  "raw_summary": {
+    "stdout_tail": "",
+    "stderr_tail": "URLError(err)\nurllib.error.URLError: <urlopen error [Errno 1] Operation not permitted>\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/Users/xie/Documents/New project/eval/run_dynamic.py\", line 346, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/Users/xie/Documents/New project/eval/run_dynamic.py\", line 322, in main\n    run_dynamic(\n  File \"/Users/xie/Documents/New project/eval/run_dynamic.py\", line 133, in run_dynamic\n    action = doctor.next_action(\n             ^^^^^^^^^^^^^^^^^^^\n  File \"/Users/xie/Documents/New project/agents/doctor_agent.py\", line 261, in next_action\n    action = parse_with_retry(_call, prompt, max_retries=2)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/xie/Documents/New project/models/parsing.py\", line 81, in parse_with_retry\n    raw = call_model(effective_prompt)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/xie/Documents/New project/agents/doctor_agent.py\", line 255, in _call\n    return self.adapter.complete([\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/xie/Documents/New project/models/adapters/base.py\", line 44, in complete\n    response = self._complete_uncached(messages, temperature)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/xie/Documents/New project/models/adapters/local_llama.py\", line 28, in _complete_uncached\n    response = post_json(self.endpoint, payload=payload, headers=headers)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/xie/Documents/New project/models/adapters/http_utils.py\", line 28, in post_json\n    raise AdapterHttpError(f\"Failed to reach {url}: {exc.reason}\") from exc\nmodels.adapters.http_utils.AdapterHttpError: Failed to reach http://localhost:8000/v1/chat/completions: [Errno 1] Operation not permitted\n"
+  },
+  "target_release_id": "v1.1.0-rc1",
+  "run": {
+    "run_id": "run_20260309_113947_0525153d",
+    "status": "failed",
+    "results_root": null,
+    "metrics_path": null,
+    "summary_path": null
+  }
+}

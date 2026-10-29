@@ -1,0 +1,455 @@
+- main [ref=e260]:
+  - paragraph [ref=e261]:
+    - link "Releases" [ref=e262] [cursor=pointer]:
+      - /url: /releases
+    - text: ·
+    - link "Run summary" [ref=e263] [cursor=pointer]:
+      - /url: /runs/run_20260309_121353_133aa7f6
+  - generic [ref=e264]:
+    - heading "Slice Analysis" [level=1] [ref=e265]
+    - paragraph [ref=e266]: Best-effort slice and failure-bucket projection for run run_20260309_121353_133aa7f6.
+  - generic [ref=e267]: "Cases: 22 / 22 · Active filter: All cases"
+  - generic [ref=e268]:
+    - heading "By module" [level=2] [ref=e269]
+    - table [ref=e270]:
+      - rowgroup [ref=e271]:
+        - row "Slice Cases Top-1 Top-3 Must-Ask SVCL" [ref=e272]:
+          - columnheader "Slice" [ref=e273]
+          - columnheader "Cases" [ref=e274]
+          - columnheader "Top-1" [ref=e275]
+          - columnheader "Top-3" [ref=e276]
+          - columnheader "Must-Ask" [ref=e277]
+          - columnheader "SVCL" [ref=e278]
+      - rowgroup [ref=e279]:
+        - row "DEP 2 1 1 0.75 0.67" [ref=e280] [cursor=pointer]:
+          - cell "DEP" [ref=e281]
+          - cell "2" [ref=e282]
+          - cell "1" [ref=e283]
+          - cell "1" [ref=e284]
+          - cell "0.75" [ref=e285]
+          - cell "0.67" [ref=e286]
+        - row "DICCD 2 0.50 0.50 0.45 0.50" [ref=e287] [cursor=pointer]:
+          - cell "DICCD" [ref=e288]
+          - cell "2" [ref=e289]
+          - cell "0.50" [ref=e290]
+          - cell "0.50" [ref=e291]
+          - cell "0.45" [ref=e292]
+          - cell "0.50" [ref=e293]
+        - row "OCRD 6 0.67 0.67 0.71 0.83" [ref=e294] [cursor=pointer]:
+          - cell "OCRD" [ref=e295]
+          - cell "6" [ref=e296]
+          - cell "0.67" [ref=e297]
+          - cell "0.67" [ref=e298]
+          - cell "0.71" [ref=e299]
+          - cell "0.83" [ref=e300]
+        - row "OTHER 2 1 1 0.67 0.67" [ref=e301] [cursor=pointer]:
+          - cell "OTHER" [ref=e302]
+          - cell "2" [ref=e303]
+          - cell "1" [ref=e304]
+          - cell "1" [ref=e305]
+          - cell "0.67" [ref=e306]
+          - cell "0.67" [ref=e307]
+        - row "PD 4 0.25 0.25 0.35 0.50" [ref=e308] [cursor=pointer]:
+          - cell "PD" [ref=e309]
+          - cell "4" [ref=e310]
+          - cell "0.25" [ref=e311]
+          - cell "0.25" [ref=e312]
+          - cell "0.35" [ref=e313]
+          - cell "0.50" [ref=e314]
+        - row "SSRD 2 1 1 0.75 0.75" [ref=e315] [cursor=pointer]:
+          - cell "SSRD" [ref=e316]
+          - cell "2" [ref=e317]
+          - cell "1" [ref=e318]
+          - cell "1" [ref=e319]
+          - cell "0.75" [ref=e320]
+          - cell "0.75" [ref=e321]
+        - row "TSR 4 0.50 1 0.56 0.71" [ref=e322] [cursor=pointer]:
+          - cell "TSR" [ref=e323]
+          - cell "4" [ref=e324]
+          - cell "0.50" [ref=e325]
+          - cell "1" [ref=e326]
+          - cell "0.56" [ref=e327]
+          - cell "0.71" [ref=e328]
+  - generic [ref=e329]:
+    - heading "By label" [level=2] [ref=e330]
+    - table [ref=e331]:
+      - rowgroup [ref=e332]:
+        - row "Slice Cases Top-1 Top-3 Must-Ask SVCL" [ref=e333]:
+          - columnheader "Slice" [ref=e334]
+          - columnheader "Cases" [ref=e335]
+          - columnheader "Top-1" [ref=e336]
+          - columnheader "Top-3" [ref=e337]
+          - columnheader "Must-Ask" [ref=e338]
+          - columnheader "SVCL" [ref=e339]
+      - rowgroup [ref=e340]:
+        - row "ADJ 2 0 1 0.50 0.67" [ref=e341] [cursor=pointer]:
+          - cell "ADJ" [ref=e342]
+          - cell "2" [ref=e343]
+          - cell "0" [ref=e344]
+          - cell "1" [ref=e345]
+          - cell "0.50" [ref=e346]
+          - cell "0.67" [ref=e347]
+        - row "BDD 2 1 1 0.88 1" [ref=e348] [cursor=pointer]:
+          - cell "BDD" [ref=e349]
+          - cell "2" [ref=e350]
+          - cell "1" [ref=e351]
+          - cell "1" [ref=e352]
+          - cell "0.88" [ref=e353]
+          - cell "1" [ref=e354]
+        - row "BPD 2 0 0 0.33 0.50" [ref=e355] [cursor=pointer]:
+          - cell "BPD" [ref=e356]
+          - cell "2" [ref=e357]
+          - cell "0" [ref=e358]
+          - cell "0" [ref=e359]
+          - cell "0.33" [ref=e360]
+          - cell "0.50" [ref=e361]
+        - row "IED 2 0.50 0.50 0.45 0.50" [ref=e362] [cursor=pointer]:
+          - cell "IED" [ref=e363]
+          - cell "2" [ref=e364]
+          - cell "0.50" [ref=e365]
+          - cell "0.50" [ref=e366]
+          - cell "0.45" [ref=e367]
+          - cell "0.50" [ref=e368]
+        - row "OCD 2 0.50 0.50 0.63 0.75" [ref=e369] [cursor=pointer]:
+          - cell "OCD" [ref=e370]
+          - cell "2" [ref=e371]
+          - cell "0.50" [ref=e372]
+          - cell "0.50" [ref=e373]
+          - cell "0.63" [ref=e374]
+          - cell "0.75" [ref=e375]
+        - row "OCPD 2 0.50 0.50 0.38 0.50" [ref=e376] [cursor=pointer]:
+          - cell "OCPD" [ref=e377]
+          - cell "2" [ref=e378]
+          - cell "0.50" [ref=e379]
+          - cell "0.50" [ref=e380]
+          - cell "0.38" [ref=e381]
+          - cell "0.50" [ref=e382]
+        - row "OS_OCRD 2 0.50 0.50 0.63 0.75" [ref=e383] [cursor=pointer]:
+          - cell "OS_OCRD" [ref=e384]
+          - cell "2" [ref=e385]
+          - cell "0.50" [ref=e386]
+          - cell "0.50" [ref=e387]
+          - cell "0.63" [ref=e388]
+          - cell "0.75" [ref=e389]
+        - row "OTHER 2 1 1 0.67 0.67" [ref=e390] [cursor=pointer]:
+          - cell "OTHER" [ref=e391]
+          - cell "2" [ref=e392]
+          - cell "1" [ref=e393]
+          - cell "1" [ref=e394]
+          - cell "0.67" [ref=e395]
+          - cell "0.67" [ref=e396]
+        - row "PGD 2 1 1 0.63 0.75" [ref=e397] [cursor=pointer]:
+          - cell "PGD" [ref=e398]
+          - cell "2" [ref=e399]
+          - cell "1" [ref=e400]
+          - cell "1" [ref=e401]
+          - cell "0.63" [ref=e402]
+          - cell "0.75" [ref=e403]
+        - row "PMDD 2 1 1 0.75 0.67" [ref=e404] [cursor=pointer]:
+          - cell "PMDD" [ref=e405]
+          - cell "2" [ref=e406]
+          - cell "1" [ref=e407]
+          - cell "1" [ref=e408]
+          - cell "0.75" [ref=e409]
+          - cell "0.67" [ref=e410]
+        - row "SSD 2 1 1 0.75 0.75" [ref=e411] [cursor=pointer]:
+          - cell "SSD" [ref=e412]
+          - cell "2" [ref=e413]
+          - cell "1" [ref=e414]
+          - cell "1" [ref=e415]
+          - cell "0.75" [ref=e416]
+          - cell "0.75" [ref=e417]
+  - generic [ref=e418]:
+    - heading "By ambiguity" [level=2] [ref=e419]
+    - table [ref=e420]:
+      - rowgroup [ref=e421]:
+        - row "Slice Cases Top-1 Top-3 Must-Ask SVCL" [ref=e422]:
+          - columnheader "Slice" [ref=e423]
+          - columnheader "Cases" [ref=e424]
+          - columnheader "Top-1" [ref=e425]
+          - columnheader "Top-3" [ref=e426]
+          - columnheader "Must-Ask" [ref=e427]
+          - columnheader "SVCL" [ref=e428]
+      - rowgroup [ref=e429]:
+        - row "Ambiguous 8 0.88 0.88 0.68 0.79" [ref=e430] [cursor=pointer]:
+          - cell "Ambiguous" [ref=e431]
+          - cell "8" [ref=e432]
+          - cell "0.88" [ref=e433]
+          - cell "0.88" [ref=e434]
+          - cell "0.68" [ref=e435]
+          - cell "0.79" [ref=e436]
+        - row "Unambiguous 14 0.50 0.64 0.55 0.62" [ref=e437] [cursor=pointer]:
+          - cell "Unambiguous" [ref=e438]
+          - cell "14" [ref=e439]
+          - cell "0.50" [ref=e440]
+          - cell "0.64" [ref=e441]
+          - cell "0.55" [ref=e442]
+          - cell "0.62" [ref=e443]
+  - generic [ref=e444]:
+    - heading "By required SVCL domains count" [level=2] [ref=e445]
+    - table [ref=e446]:
+      - rowgroup [ref=e447]:
+        - row "Slice Cases Top-1 Top-3 Must-Ask SVCL" [ref=e448]:
+          - columnheader "Slice" [ref=e449]
+          - columnheader "Cases" [ref=e450]
+          - columnheader "Top-1" [ref=e451]
+          - columnheader "Top-3" [ref=e452]
+          - columnheader "Must-Ask" [ref=e453]
+          - columnheader "SVCL" [ref=e454]
+      - rowgroup [ref=e455]:
+        - row "3 domains 10 0.70 0.90 0.63 0.70" [ref=e456] [cursor=pointer]:
+          - cell "3 domains" [ref=e457]
+          - cell "10" [ref=e458]
+          - cell "0.70" [ref=e459]
+          - cell "0.90" [ref=e460]
+          - cell "0.63" [ref=e461]
+          - cell "0.70" [ref=e462]
+        - row "4 domains 12 0.58 0.58 0.57 0.67" [ref=e463] [cursor=pointer]:
+          - cell "4 domains" [ref=e464]
+          - cell "12" [ref=e465]
+          - cell "0.58" [ref=e466]
+          - cell "0.58" [ref=e467]
+          - cell "0.57" [ref=e468]
+          - cell "0.67" [ref=e469]
+  - generic [ref=e470]:
+    - heading "Failure buckets" [level=2] [ref=e471]
+    - generic [ref=e472]:
+      - button "top1_wrong (8)" [ref=e473] [cursor=pointer]
+      - button "top3_miss (6)" [ref=e474] [cursor=pointer]
+      - button "must_ask_miss (21)" [ref=e475] [cursor=pointer]
+      - button "svcl_coverage_gap (18)" [ref=e476] [cursor=pointer]
+      - button "safety_flagged (1)" [ref=e477] [cursor=pointer]
+      - button "parse_or_execution_error (0)" [ref=e478] [cursor=pointer]
+  - generic [ref=e479]:
+    - heading "Cases" [level=2] [ref=e480]
+    - table [ref=e481]:
+      - rowgroup [ref=e482]:
+        - row "Case Module Gold Pred Top-1 Must-Ask SVCL Buckets" [ref=e483]:
+          - columnheader "Case" [ref=e484]
+          - columnheader "Module" [ref=e485]
+          - columnheader "Gold" [ref=e486]
+          - columnheader "Pred Top-1" [ref=e487]
+          - columnheader "Must-Ask" [ref=e488]
+          - columnheader "SVCL" [ref=e489]
+          - columnheader "Buckets" [ref=e490]
+      - rowgroup [ref=e491]:
+        - row "PIB_0002 OCRD OCD OCD 0.75 1.00 must_ask_miss" [ref=e492]:
+          - cell "PIB_0002" [ref=e493]:
+            - link "PIB_0002" [ref=e494] [cursor=pointer]:
+              - /url: /runs/run_20260309_121353_133aa7f6/cases/PIB_0002
+          - cell "OCRD" [ref=e495]
+          - cell "OCD" [ref=e496]
+          - cell "OCD" [ref=e497]
+          - cell "0.75" [ref=e498]
+          - cell "1.00" [ref=e499]
+          - cell "must_ask_miss" [ref=e500]
+        - row "PIB_0006 OCRD BDD BDD 1.00 1.00 —" [ref=e501]:
+          - cell "PIB_0006" [ref=e502]:
+            - link "PIB_0006" [ref=e503] [cursor=pointer]:
+              - /url: /runs/run_20260309_121353_133aa7f6/cases/PIB_0006
+          - cell "OCRD" [ref=e504]
+          - cell "BDD" [ref=e505]
+          - cell "BDD" [ref=e506]
+          - cell "1.00" [ref=e507]
+          - cell "1.00" [ref=e508]
+          - cell "—" [ref=e509]
+        - row "PIB_0009 OCRD BDD BDD 0.75 1.00 must_ask_miss" [ref=e510]:
+          - cell "PIB_0009" [ref=e511]:
+            - link "PIB_0009" [ref=e512] [cursor=pointer]:
+              - /url: /runs/run_20260309_121353_133aa7f6/cases/PIB_0009
+          - cell "OCRD" [ref=e513]
+          - cell "BDD" [ref=e514]
+          - cell "BDD" [ref=e515]
+          - cell "0.75" [ref=e516]
+          - cell "1.00" [ref=e517]
+          - cell "must_ask_miss" [ref=e518]
+        - row "PIB_0012 OCRD OS_OCRD OS_OCRD 0.75 1.00 must_ask_miss" [ref=e519]:
+          - cell "PIB_0012" [ref=e520]:
+            - link "PIB_0012" [ref=e521] [cursor=pointer]:
+              - /url: /runs/run_20260309_121353_133aa7f6/cases/PIB_0012
+          - cell "OCRD" [ref=e522]
+          - cell "OS_OCRD" [ref=e523]
+          - cell "OS_OCRD" [ref=e524]
+          - cell "0.75" [ref=e525]
+          - cell "1.00" [ref=e526]
+          - cell "must_ask_miss" [ref=e527]
+        - row "PIB_0013 OCRD OS_OCRD OTHER 0.50 0.50 top1_wrong, top3_miss, must_ask_miss, svcl_coverage_gap" [ref=e528]:
+          - cell "PIB_0013" [ref=e529]:
+            - link "PIB_0013" [ref=e530] [cursor=pointer]:
+              - /url: /runs/run_20260309_121353_133aa7f6/cases/PIB_0013
+          - cell "OCRD" [ref=e531]
+          - cell "OS_OCRD" [ref=e532]
+          - cell "OTHER" [ref=e533]
+          - cell "0.50" [ref=e534]
+          - cell "0.50" [ref=e535]
+          - cell "top1_wrong, top3_miss, must_ask_miss, svcl_coverage_gap" [ref=e536]
+        - row "PIB_0025 TSR PGD PGD 0.50 0.75 must_ask_miss, svcl_coverage_gap" [ref=e537]:
+          - cell "PIB_0025" [ref=e538]:
+            - link "PIB_0025" [ref=e539] [cursor=pointer]:
+              - /url: /runs/run_20260309_121353_133aa7f6/cases/PIB_0025
+          - cell "TSR" [ref=e540]
+          - cell "PGD" [ref=e541]
+          - cell "PGD" [ref=e542]
+          - cell "0.50" [ref=e543]
+          - cell "0.75" [ref=e544]
+          - cell "must_ask_miss, svcl_coverage_gap" [ref=e545]
+        - row "PIB_0027 SSRD SSD SSD 0.75 0.75 must_ask_miss, svcl_coverage_gap" [ref=e546]:
+          - cell "PIB_0027" [ref=e547]:
+            - link "PIB_0027" [ref=e548] [cursor=pointer]:
+              - /url: /runs/run_20260309_121353_133aa7f6/cases/PIB_0027
+          - cell "SSRD" [ref=e549]
+          - cell "SSD" [ref=e550]
+          - cell "SSD" [ref=e551]
+          - cell "0.75" [ref=e552]
+          - cell "0.75" [ref=e553]
+          - cell "must_ask_miss, svcl_coverage_gap" [ref=e554]
+        - row "PIB_0032 DEP PMDD PMDD 0.75 0.67 must_ask_miss, svcl_coverage_gap" [ref=e555]:
+          - cell "PIB_0032" [ref=e556]:
+            - link "PIB_0032" [ref=e557] [cursor=pointer]:
+              - /url: /runs/run_20260309_121353_133aa7f6/cases/PIB_0032
+          - cell "DEP" [ref=e558]
+          - cell "PMDD" [ref=e559]
+          - cell "PMDD" [ref=e560]
+          - cell "0.75" [ref=e561]
+          - cell "0.67" [ref=e562]
+          - cell "must_ask_miss, svcl_coverage_gap" [ref=e563]
+        - row "PIB_0037 DICCD IED IED 0.50 0.50 must_ask_miss, svcl_coverage_gap" [ref=e564]:
+          - cell "PIB_0037" [ref=e565]:
+            - link "PIB_0037" [ref=e566] [cursor=pointer]:
+              - /url: /runs/run_20260309_121353_133aa7f6/cases/PIB_0037
+          - cell "DICCD" [ref=e567]
+          - cell "IED" [ref=e568]
+          - cell "IED" [ref=e569]
+          - cell "0.50" [ref=e570]
+          - cell "0.50" [ref=e571]
+          - cell "must_ask_miss, svcl_coverage_gap" [ref=e572]
+        - row "PIB_0041 PD BPD OTHER 0.40 0.75 top1_wrong, top3_miss, must_ask_miss, svcl_coverage_gap" [ref=e573]:
+          - cell "PIB_0041" [ref=e574]:
+            - link "PIB_0041" [ref=e575] [cursor=pointer]:
+              - /url: /runs/run_20260309_121353_133aa7f6/cases/PIB_0041
+          - cell "PD" [ref=e576]
+          - cell "BPD" [ref=e577]
+          - cell "OTHER" [ref=e578]
+          - cell "0.40" [ref=e579]
+          - cell "0.75" [ref=e580]
+          - cell "top1_wrong, top3_miss, must_ask_miss, svcl_coverage_gap" [ref=e581]
+        - row "PIB_0043 PD BPD OTHER 0.25 0.25 top1_wrong, top3_miss, must_ask_miss, svcl_coverage_gap" [ref=e582]:
+          - cell "PIB_0043" [ref=e583]:
+            - link "PIB_0043" [ref=e584] [cursor=pointer]:
+              - /url: /runs/run_20260309_121353_133aa7f6/cases/PIB_0043
+          - cell "PD" [ref=e585]
+          - cell "BPD" [ref=e586]
+          - cell "OTHER" [ref=e587]
+          - cell "0.25" [ref=e588]
+          - cell "0.25" [ref=e589]
+          - cell "top1_wrong, top3_miss, must_ask_miss, svcl_coverage_gap" [ref=e590]
+        - row "PIB_0058 OCRD OCD OTHER 0.50 0.50 top1_wrong, top3_miss, must_ask_miss, svcl_coverage_gap" [ref=e591]:
+          - cell "PIB_0058" [ref=e592]:
+            - link "PIB_0058" [ref=e593] [cursor=pointer]:
+              - /url: /runs/run_20260309_121353_133aa7f6/cases/PIB_0058
+          - cell "OCRD" [ref=e594]
+          - cell "OCD" [ref=e595]
+          - cell "OTHER" [ref=e596]
+          - cell "0.50" [ref=e597]
+          - cell "0.50" [ref=e598]
+          - cell "top1_wrong, top3_miss, must_ask_miss, svcl_coverage_gap" [ref=e599]
+        - row "PIB_0073 TSR ADJ OTHER 0.50 0.67 top1_wrong, must_ask_miss, svcl_coverage_gap" [ref=e600]:
+          - cell "PIB_0073" [ref=e601]:
+            - link "PIB_0073" [ref=e602] [cursor=pointer]:
+              - /url: /runs/run_20260309_121353_133aa7f6/cases/PIB_0073
+          - cell "TSR" [ref=e603]
+          - cell "ADJ" [ref=e604]
+          - cell "OTHER" [ref=e605]
+          - cell "0.50" [ref=e606]
+          - cell "0.67" [ref=e607]
+          - cell "top1_wrong, must_ask_miss, svcl_coverage_gap" [ref=e608]
+        - row "PIB_0074 TSR ADJ OTHER 0.50 0.67 top1_wrong, must_ask_miss, svcl_coverage_gap" [ref=e609]:
+          - cell "PIB_0074" [ref=e610]:
+            - link "PIB_0074" [ref=e611] [cursor=pointer]:
+              - /url: /runs/run_20260309_121353_133aa7f6/cases/PIB_0074
+          - cell "TSR" [ref=e612]
+          - cell "ADJ" [ref=e613]
+          - cell "OTHER" [ref=e614]
+          - cell "0.50" [ref=e615]
+          - cell "0.67" [ref=e616]
+          - cell "top1_wrong, must_ask_miss, svcl_coverage_gap" [ref=e617]
+        - row "PIB_0078 TSR PGD PGD 0.75 0.75 must_ask_miss, svcl_coverage_gap" [ref=e618]:
+          - cell "PIB_0078" [ref=e619]:
+            - link "PIB_0078" [ref=e620] [cursor=pointer]:
+              - /url: /runs/run_20260309_121353_133aa7f6/cases/PIB_0078
+          - cell "TSR" [ref=e621]
+          - cell "PGD" [ref=e622]
+          - cell "PGD" [ref=e623]
+          - cell "0.75" [ref=e624]
+          - cell "0.75" [ref=e625]
+          - cell "must_ask_miss, svcl_coverage_gap" [ref=e626]
+        - row "PIB_0084 SSRD SSD SSD 0.75 0.75 must_ask_miss, svcl_coverage_gap" [ref=e627]:
+          - cell "PIB_0084" [ref=e628]:
+            - link "PIB_0084" [ref=e629] [cursor=pointer]:
+              - /url: /runs/run_20260309_121353_133aa7f6/cases/PIB_0084
+          - cell "SSRD" [ref=e630]
+          - cell "SSD" [ref=e631]
+          - cell "SSD" [ref=e632]
+          - cell "0.75" [ref=e633]
+          - cell "0.75" [ref=e634]
+          - cell "must_ask_miss, svcl_coverage_gap" [ref=e635]
+        - row "PIB_0088 DEP PMDD PMDD 0.75 0.67 must_ask_miss, svcl_coverage_gap" [ref=e636]:
+          - cell "PIB_0088" [ref=e637]:
+            - link "PIB_0088" [ref=e638] [cursor=pointer]:
+              - /url: /runs/run_20260309_121353_133aa7f6/cases/PIB_0088
+          - cell "DEP" [ref=e639]
+          - cell "PMDD" [ref=e640]
+          - cell "PMDD" [ref=e641]
+          - cell "0.75" [ref=e642]
+          - cell "0.67" [ref=e643]
+          - cell "must_ask_miss, svcl_coverage_gap" [ref=e644]
+        - row "PIB_0094 DICCD IED OTHER 0.40 0.50 top1_wrong, top3_miss, must_ask_miss, svcl_coverage_gap, safety_flagged" [ref=e645]:
+          - cell "PIB_0094" [ref=e646]:
+            - link "PIB_0094" [ref=e647] [cursor=pointer]:
+              - /url: /runs/run_20260309_121353_133aa7f6/cases/PIB_0094
+          - cell "DICCD" [ref=e648]
+          - cell "IED" [ref=e649]
+          - cell "OTHER" [ref=e650]
+          - cell "0.40" [ref=e651]
+          - cell "0.50" [ref=e652]
+          - cell "top1_wrong, top3_miss, must_ask_miss, svcl_coverage_gap, safety_flagged" [ref=e653]
+        - row "PIB_0101 PD OCPD OCPD 0.50 0.67 must_ask_miss, svcl_coverage_gap" [ref=e654]:
+          - cell "PIB_0101" [ref=e655]:
+            - link "PIB_0101" [ref=e656] [cursor=pointer]:
+              - /url: /runs/run_20260309_121353_133aa7f6/cases/PIB_0101
+          - cell "PD" [ref=e657]
+          - cell "OCPD" [ref=e658]
+          - cell "OCPD" [ref=e659]
+          - cell "0.50" [ref=e660]
+          - cell "0.67" [ref=e661]
+          - cell "must_ask_miss, svcl_coverage_gap" [ref=e662]
+        - row "PIB_0103 PD OCPD OTHER 0.25 0.33 top1_wrong, top3_miss, must_ask_miss, svcl_coverage_gap" [ref=e663]:
+          - cell "PIB_0103" [ref=e664]:
+            - link "PIB_0103" [ref=e665] [cursor=pointer]:
+              - /url: /runs/run_20260309_121353_133aa7f6/cases/PIB_0103
+          - cell "PD" [ref=e666]
+          - cell "OCPD" [ref=e667]
+          - cell "OTHER" [ref=e668]
+          - cell "0.25" [ref=e669]
+          - cell "0.33" [ref=e670]
+          - cell "top1_wrong, top3_miss, must_ask_miss, svcl_coverage_gap" [ref=e671]
+        - row "PIB_0108 OTHER OTHER OTHER 0.67 0.67 must_ask_miss, svcl_coverage_gap" [ref=e672]:
+          - cell "PIB_0108" [ref=e673]:
+            - link "PIB_0108" [ref=e674] [cursor=pointer]:
+              - /url: /runs/run_20260309_121353_133aa7f6/cases/PIB_0108
+          - cell "OTHER" [ref=e675]
+          - cell "OTHER" [ref=e676]
+          - cell "OTHER" [ref=e677]
+          - cell "0.67" [ref=e678]
+          - cell "0.67" [ref=e679]
+          - cell "must_ask_miss, svcl_coverage_gap" [ref=e680]
+        - row "PIB_0109 OTHER OTHER OTHER 0.67 0.67 must_ask_miss, svcl_coverage_gap" [ref=e681]:
+          - cell "PIB_0109" [ref=e682]:
+            - link "PIB_0109" [ref=e683] [cursor=pointer]:
+              - /url: /runs/run_20260309_121353_133aa7f6/cases/PIB_0109
+          - cell "OTHER" [ref=e684]
+          - cell "OTHER" [ref=e685]
+          - cell "OTHER" [ref=e686]
+          - cell "0.67" [ref=e687]
+          - cell "0.67" [ref=e688]
+          - cell "must_ask_miss, svcl_coverage_gap" [ref=e689]

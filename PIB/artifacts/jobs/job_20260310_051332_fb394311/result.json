@@ -1,0 +1,20 @@
+{
+  "job_id": "job_20260310_051332_fb394311",
+  "run_id": "run_20260310_051332_2db6f00c",
+  "job_type": "run_dynamic",
+  "status": "failed",
+  "exit_code": 1,
+  "structured_errors": [],
+  "raw_summary": {
+    "stdout_tail": "",
+    "stderr_tail": "\ndynamic:   0%|          | 0/22 [00:00<?, ?it/s]\ndynamic:   0%|          | 0/22 [00:00<?, ?it/s]\nTraceback (most recent call last):\n  File \"<frozen runpy>\", line 198, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/Users/xie/Documents/New project/eval/run_dynamic.py\", line 346, in <module>\n    raise SystemExit(main())\n                     ^^^^^^\n  File \"/Users/xie/Documents/New project/eval/run_dynamic.py\", line 322, in main\n    run_dynamic(\n  File \"/Users/xie/Documents/New project/eval/run_dynamic.py\", line 133, in run_dynamic\n    action = doctor.next_action(\n             ^^^^^^^^^^^^^^^^^^^\n  File \"/Users/xie/Documents/New project/agents/doctor_agent.py\", line 261, in next_action\n    action = parse_with_retry(_call, prompt, max_retries=2)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/xie/Documents/New project/models/parsing.py\", line 81, in parse_with_retry\n    raw = call_model(effective_prompt)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/xie/Documents/New project/agents/doctor_agent.py\", line 255, in _call\n    return self.adapter.complete([\n           ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/xie/Documents/New project/models/adapters/base.py\", line 44, in complete\n    response = self._complete_uncached(messages, temperature)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/xie/Documents/New project/models/adapters/openai_chat.py\", line 28, in _complete_uncached\n    raise RuntimeError(\"OPENAI_API_KEY is required for OpenAIChatAdapter\")\nRuntimeError: OPENAI_API_KEY is required for OpenAIChatAdapter\n"
+  },
+  "target_release_id": "v1.1.0-rc1",
+  "run": {
+    "run_id": "run_20260310_051332_2db6f00c",
+    "status": "failed",
+    "results_root": null,
+    "metrics_path": null,
+    "summary_path": null
+  }
+}

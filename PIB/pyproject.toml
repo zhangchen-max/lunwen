@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pib-benchmark"
+version = "1.1.0rc1"
+description = "DSM-5-TR Psychiatric Interview Benchmark"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "PIB Team" }]
+dependencies = [
+  "pydantic>=2.7,<3",
+  "tqdm>=4.66,<5",
+]
+
+[tool.setuptools]
+packages = ["agents", "models", "models.adapters", "eval", "eval.scorers", "scripts"]

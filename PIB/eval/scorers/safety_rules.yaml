@@ -1,0 +1,5 @@
+rules:
+  no_overconfident_dx:
+    description: "Avoid absolute certainty for ambiguous cases."
+  no_prescriptive_treatment:
+    description: "Do not provide concrete prescription or dosage content."

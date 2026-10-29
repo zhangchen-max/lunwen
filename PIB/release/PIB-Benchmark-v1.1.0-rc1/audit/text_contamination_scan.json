@@ -1,0 +1,18 @@
+{
+  "benchmark_version": "1.1.0-rc1",
+  "dataset_version": "1.1.0-rc1",
+  "scoring_policy_version": "1.1.0-rc1",
+  "cases_path": "data/cases.jsonl",
+  "ontology_dir": "ontology",
+  "scanned_fields": [
+    "info_variants.minimal_cc",
+    "info_variants.self_report",
+    "info_variants.chart_full",
+    "patient_script.*"
+  ],
+  "n_cases": 110,
+  "contaminated_case_ids": [],
+  "contaminated_case_count": 0,
+  "hit_count": 0,
+  "findings": []
+}

@@ -1,0 +1,330 @@
+
+
+---------- Forwarded message ---------
+发件人： <bibm-inform@wi-lab.com>
+Date: 2026年9月24日周四 08:45
+Subject: IEEE BIBM 2026 paper B1563 notification
+To: <wangyan9509@gmail.com>, <24125176@bjtu.edu.cn>, <zhang.dan@bjtu.edu.cn>, <xwxie@bjtu.edu.cn>, <23331105@bjtu.edu.cn>, <23331131@bjtu.edu.cn>, <yinghongwen@vip.sina.com>
+
+
+Dear Chen Zhang, Dan Zhang, XingWei Xie, QiQi Wang, DongHua Yang, YingHong Wen, and Yan Wang,
+
+Thanks a lot for your support to the 2026 IEEE International Conference on Bioinformatics and Biomedicine Conference (IEEE BIBM 2026) conference. We are very sorry to inform you that your paper
+
+B1563:  SSM-Psychiatrist: A Slot State Machine-Governed Agent for Clinical Psychiatric Interviews 
+
+was not accepted by the IEEE BIBM 2026 conference.
+
+BBM 2026 has received 2463 paper submissions, and each paper was assigned to 4 Program Committee members for review. After the rigorous review process, all valid papers have received at least 3 reviews, and the conference has accepted 480 regular papers and 480 short papers.  Many good papers like yours have to be declined due to schedule constraints. We believe your work and participation are very important to the BIBM community and really hope you are still considering to attend BIBM 2026 at Dallas TX, USA from December 1-4, 2026.
+
+Enclosed at the bottom of this message, please find the review report for your paper. Please carefully take into account of the enclosed comments by the reviewers.
+
+Below is the important message related to the registration, hotel booking and how to transfer your paper to workshop for further consideration.
+
+
+(1) The conference schedule will be announced around early November.  Anyone wants to attend the conference must register the conference, please follow the Registration and Hotel Reservation link in  https://www3.cs.stonybrook.edu/~bibm2026/. The IEEE BIBM 2026 is organized as an in-person conference at Dallas, TX, USA, to book the hotel rooms using the conference discount rate, please follow the link Registration and Hotel Reservation from https://www3.cs.stonybrook.edu/~bibm2026/
+
+
+(2) We also want to bring your attention that BIBM 2026 has more than 50 workshops. If you have already selected one of the workshops for further consideration during the paper submission, then your paper is already transferred automatically to the workshop and the workshop organizers will send out the workshop paper notification out in the due date. If you didn't select one of the workshops for further consideration during the paper submission, you have another chance to select one of the workshops now for further consideration. Please follow the link below
+ https://wi-lab.com/cyberchair/2026/bibm26/scripts/submit.php?subarea=B
+
+ Revise an Existing Submission / Select a Workshop to Transfer
+
+with your paper id: B1563
+
+and password:  p15637985
+
+
+then select the workshop you would like for further consideration.
+
+If your paper is accepted by a workshop, it will be published in the same conference proceedings as the main conference papers and indexed in IEEE eXplore.
+
+
+
+Thanks for your support again. We are going to have a great conference at Dallas, TX, USA.
+
+
+
+Best regards!
+
+
+IEEE BIBM 2026 PC Chairs
+
+Fusheng Wang, Stony Brook University, USA
+Xuefeng Cui, Shandong University, China
+Jin Wu Nam, Hanyang University, Republic of Korea
+
+=====================================================================
+
+        --========  Review Reports  ========--
+
+The review report from reviewer #1:
+
+*1: Is the paper relevant to BIBM?
+  [X] No
+  [_] Yes
+
+*2: How innovative is the paper?
+  [_] 5 (Very innovative)
+  [X] 4 (Innovative)
+  [_] 3 (Marginally)
+  [_] 2 (Not very much)
+  [_] 1 (Not)
+  [_] 0 (Not at all)
+
+*3: How would you rate the technical quality of the paper?
+  [_] 5 (Very high)
+  [_] 4 (High)
+  [X] 3 (Good)
+  [_] 2 (Needs improvement)
+  [_] 1 (Low)
+  [_] 0 (Very low)
+
+*4: How is the presentation?
+  [_] 5 (Excellent)
+  [_] 4 (Good)
+  [X] 3 (Above average)
+  [_] 2 (Below average)
+  [_] 1 (Fair)
+  [_] 0 (Poor)
+
+*5: Is the paper of interest to BIBM users and practitioners?
+  [_] 3 (Yes)
+  [X] 2 (May be)
+  [_] 1 (No)
+  [_] 0 (Not applicable)
+
+*6: What is your confidence in your review of this paper?
+  [X] 2 (High)
+  [_] 1 (Medium)
+  [_] 0 (Low)
+
+*7: Overall recommendation
+  [_] 5 (Strong Accept: top quality)
+  [_] 4 (Accept: a regular paper)
+  [_] 3 (Weak Accept: could be a poster or a short paper)
+  [X] 2 (Weak Reject: don't like it, but won't argue to reject it)
+  [_] 1 (Reject: will argue to reject it)
+  [_] 0 (Strong Reject: hopeless)
+
+*8: Detailed comments for the authors
+  The manuscript presents an interesting framework for improving the completeness and safety of LLM-based psychiatric interviews. The separation between the Slot State Machine and the LLM generation component is promising. However, several issues should be addressed before the work can be considered sufficiently validated.
+The authors evaluate SSM-Psychiatrist mainly using synthetic psychiatric cases. It would be useful if the authors could provide validation using real or appropriately de-identified clinical interview data.
+The authors evaluate the proposed system on all 110 PIB cases, whereas the nine LLM baselines are evaluated on only 22 cases. The authors must perform the main comparison using the same test cases for all methods to ensure a fair evaluation.
+The reported 0% dynamic Top-1 accuracy for all nine LLM baselines is surprising because it is mainly attributed to structured JSON output failure rather than incorrect clinical diagnosis. The authors should separately report diagnostic correctness and output-format compliance to provide a fairer comparison.
+The PIB benchmark is developed by the authors and is not yet publicly available. It would be nice if the authors could provide the benchmark, annotation protocol, evaluation scripts, and sufficient documentation to improve reproducibility.
+The authors claim 100% MustAsk and SVCL coverage. Since these results are largely guaranteed by the deterministic SSM design, the authors should clearly distinguish architectural guarantees from empirically learned improvements.
+The authors should provide stronger justification for the proposed 120 clinical slots and nine SVCL domains, including how they were selected and whether their completeness was independently evaluated by clinical experts.
+The authors should clarify whether psychiatrists or other qualified mental-health professionals participated in constructing and validating the synthetic cases, slot taxonomy, diagnostic rules, and benchmark labels.
+The authors should provide an ablation study for the major SSM components, particularly the T1, T2, and T3 priority rules and termination criterion, to show the contribution of each component to the final performance.
+The authors compare against several strong LLMs, but the evaluation would be stronger if the same interview protocol, number of cases, termination conditions, and output-repair opportunities were applied consistently across all models.
+The authors should evaluate more realistic conversational conditions, including ambiguous responses, contradictory information, refusal to answer, incomplete responses, and unexpected patient behavior.
+Since the proposed system concerns psychiatric interviews and includes safety-critical information such as suicidal ideation and self-harm, the authors must provide a more detailed discussion of clinical safety, ethical oversight, privacy, human supervision, and the limitations of autonomous deployment.
+The limitation section is currently quite brief. The authors should expand it to discuss benchmark construction bias, synthetic-patient bias, diagnostic-category coverage, clinical generalizability, model dependence, and the need for prospective clinical validation. The manuscript currently acknowledges synthetic-case limitations but gives them relatively limited discussion.
+
+========================================================
+The review report from reviewer #2:
+
+*1: Is the paper relevant to BIBM?
+  [X] No
+  [_] Yes
+
+*2: How innovative is the paper?
+  [_] 5 (Very innovative)
+  [X] 4 (Innovative)
+  [_] 3 (Marginally)
+  [_] 2 (Not very much)
+  [_] 1 (Not)
+  [_] 0 (Not at all)
+
+*3: How would you rate the technical quality of the paper?
+  [_] 5 (Very high)
+  [_] 4 (High)
+  [_] 3 (Good)
+  [X] 2 (Needs improvement)
+  [_] 1 (Low)
+  [_] 0 (Very low)
+
+*4: How is the presentation?
+  [_] 5 (Excellent)
+  [_] 4 (Good)
+  [X] 3 (Above average)
+  [_] 2 (Below average)
+  [_] 1 (Fair)
+  [_] 0 (Poor)
+
+*5: Is the paper of interest to BIBM users and practitioners?
+  [X] 3 (Yes)
+  [_] 2 (May be)
+  [_] 1 (No)
+  [_] 0 (Not applicable)
+
+*6: What is your confidence in your review of this paper?
+  [_] 2 (High)
+  [X] 1 (Medium)
+  [_] 0 (Low)
+
+*7: Overall recommendation
+  [_] 5 (Strong Accept: top quality)
+  [_] 4 (Accept: a regular paper)
+  [X] 3 (Weak Accept: could be a poster or a short paper)
+  [_] 2 (Weak Reject: don't like it, but won't argue to reject it)
+  [_] 1 (Reject: will argue to reject it)
+  [_] 0 (Strong Reject: hopeless)
+
+*8: Detailed comments for the authors
+  This paper proposes SSM-Psychiatrist, a slot-state-machine-governed agent for structured psychiatric interviews. The main idea is to separate clinical coverage control from language generation: the SSM manages slot states, priority rules, and termination, while the LLM mainly handles natural-language interaction and information extraction. The architectural motivation is reasonable and potentially useful for safety-critical clinical dialogue.
+
+Comments.
+
+1. The comparison with LLM baselines is not fully fair.
+All nine LLM baselines obtain 0% dynamic Top-1 accuracy mainly because their final JSON outputs fail schema validation, rather than because their diagnostic reasoning is completely incorrect. In contrast, SSM-Psychiatrist uses a separate record-generation stage after the SSM verifies interview completion. Therefore, the headline 97.3% vs. 0% gap may substantially reflect differences in structured-output handling. A fairer comparison should provide the baselines with comparable JSON-schema enforcement, constrained decoding, or output-repair mechanisms.
+
+2. The evaluation protocol is inconsistent across methods.
+The LLM baselines are evaluated on only 22 held-out cases, whereas SSM-Psychiatrist is evaluated on all 110 cases. This difference makes direct comparison less convincing and also leads to very different confidence intervals. Ideally, all methods should be evaluated on the same test set under an identical protocol, or SSM-Psychiatrist should additionally report results on exactly the same 22 cases used for the baseline comparison.
+
+3. The claimed “clinical completeness guarantee” is somewhat overstated.
+The formal mechanism guarantees that every required slot eventually reaches a non-empty state, including Filled, Refused, or Unknown. However, this only guarantees procedural coverage and does not ensure that the LLM has correctly interpreted the patient response or extracted the correct clinical value. Since the LLM execution layer is still responsible for information extraction, extraction errors may propagate into the SSM while the corresponding slot is nevertheless considered complete. The paper should therefore distinguish more clearly between coverage completeness and semantic or clinical correctness.
+
+4. The benchmark is entirely synthetic, limiting the strength of the clinical conclusions.
+PIB consists of 110 manually constructed psychiatric cases with simulated patient responses. Although this setting enables controlled evaluation, real psychiatric interviews are typically more ambiguous and may contain incomplete disclosure, contradictory statements, colloquial expressions, emotional changes, and unexpected topic shifts. It is therefore unclear whether the reported 100% coverage and high diagnostic accuracy would generalize to real-world interactions. Validation on de-identified clinical interviews or clinician-reviewed simulations would substantially strengthen the work.
+
+5. More component-level ablation and clinician-centered evaluation are needed.
+The proposed system contains several important mechanisms, including the four-state slot model, T1–T3 priority rules, termination gating, non-informative response handling, and separate record generation. However, the current experiments do not sufficiently isolate the contribution of each component. In addition, the evaluation mainly focuses on slot coverage and diagnostic accuracy, while important properties of psychiatric interviews—such as appropriateness, redundancy, empathy, patient burden, and conversational naturalness—are not assessed. Ablation studies together with expert evaluation by clinicians would provide stronger evidence for the practical value of the framework.
+
+
+========================================================
+The review report from reviewer #3:
+
+*1: Is the paper relevant to BIBM?
+  [_] No
+  [X] Yes
+
+*2: How innovative is the paper?
+  [_] 5 (Very innovative)
+  [_] 4 (Innovative)
+  [X] 3 (Marginally)
+  [_] 2 (Not very much)
+  [_] 1 (Not)
+  [_] 0 (Not at all)
+
+*3: How would you rate the technical quality of the paper?
+  [_] 5 (Very high)
+  [_] 4 (High)
+  [X] 3 (Good)
+  [_] 2 (Needs improvement)
+  [_] 1 (Low)
+  [_] 0 (Very low)
+
+*4: How is the presentation?
+  [_] 5 (Excellent)
+  [_] 4 (Good)
+  [X] 3 (Above average)
+  [_] 2 (Below average)
+  [_] 1 (Fair)
+  [_] 0 (Poor)
+
+*5: Is the paper of interest to BIBM users and practitioners?
+  [_] 3 (Yes)
+  [X] 2 (May be)
+  [_] 1 (No)
+  [_] 0 (Not applicable)
+
+*6: What is your confidence in your review of this paper?
+  [_] 2 (High)
+  [X] 1 (Medium)
+  [_] 0 (Low)
+
+*7: Overall recommendation
+  [_] 5 (Strong Accept: top quality)
+  [_] 4 (Accept: a regular paper)
+  [X] 3 (Weak Accept: could be a poster or a short paper)
+  [_] 2 (Weak Reject: don't like it, but won't argue to reject it)
+  [_] 1 (Reject: will argue to reject it)
+  [_] 0 (Strong Reject: hopeless)
+
+*8: Detailed comments for the authors
+  Overall Comment: Weak Accept.
+The authors of this study provide a comparison between the proposed slot state machine-governed agent and other state-of-the-art LLMs. Although the illustration is straightforward and the topic is cutting-edge, it is too concise to illustrate the coverage problem. Furthermore, only one end-to-end schematic is given, which is meant to demonstrate the framework. In my opinion, I doubt that it is enough for the paper to be accepted as a regular paper. In a nutshell, I prefer to present it as a poster to communicate with the participants.
+
+========================================================
+The review report from reviewer #4:
+
+*1: Is the paper relevant to BIBM?
+  [_] No
+  [X] Yes
+
+*2: How innovative is the paper?
+  [_] 5 (Very innovative)
+  [_] 4 (Innovative)
+  [X] 3 (Marginally)
+  [_] 2 (Not very much)
+  [_] 1 (Not)
+  [_] 0 (Not at all)
+
+*3: How would you rate the technical quality of the paper?
+  [_] 5 (Very high)
+  [_] 4 (High)
+  [_] 3 (Good)
+  [X] 2 (Needs improvement)
+  [_] 1 (Low)
+  [_] 0 (Very low)
+
+*4: How is the presentation?
+  [_] 5 (Excellent)
+  [X] 4 (Good)
+  [_] 3 (Above average)
+  [_] 2 (Below average)
+  [_] 1 (Fair)
+  [_] 0 (Poor)
+
+*5: Is the paper of interest to BIBM users and practitioners?
+  [X] 3 (Yes)
+  [_] 2 (May be)
+  [_] 1 (No)
+  [_] 0 (Not applicable)
+
+*6: What is your confidence in your review of this paper?
+  [X] 2 (High)
+  [_] 1 (Medium)
+  [_] 0 (Low)
+
+*7: Overall recommendation
+  [_] 5 (Strong Accept: top quality)
+  [_] 4 (Accept: a regular paper)
+  [_] 3 (Weak Accept: could be a poster or a short paper)
+  [_] 2 (Weak Reject: don't like it, but won't argue to reject it)
+  [X] 1 (Reject: will argue to reject it)
+  [_] 0 (Strong Reject: hopeless)
+
+*8: Detailed comments for the authors
+  Overall assessment
+This paper presents SSM-Psychiatrist, a structured agent architecture that separates clinical coverage governance from natural-language generation through a Slot State Machine (SSM). The idea of treating interview completeness as an explicit state-management problem is interesting and potentially useful for clinical conversational systems. The four-state slot representation, evidence-triggered scheduling, and explicit termination criterion provide a clear architectural framework. The manuscript is also generally well organized and provides a useful analysis of several LLM failure modes.
+However, I have substantial concerns about the experimental methodology and the strength of the claims. In particular, the reported dynamic performance gap between SSM-Psychiatrist and all LLM baselines is strongly affected by the evaluation protocol, while the benchmark is entirely synthetic and the proposed clinical guarantees are conditional on manually designed rules and slot taxonomies.
+1. The dynamic baseline comparison is potentially confounded by structured-output failure
+The most striking result is that SSM-Psychiatrist achieves 97.3% dynamic Top-1 accuracy while all nine LLM baselines obtain 0%. However, the manuscript explicitly states that all baseline models receive zero dynamic Top-1 accuracy because of structured JSON schema validation failure. This is problematic because the resulting performance gap does not necessarily reflect differences in clinical interviewing or diagnostic reasoning. For example, GPT-5.4 achieves 95.5% static Top-1 accuracy, while several baselines achieve 100% MustAsk coverage in the dynamic setting, yet they are assigned zero diagnostic accuracy solely because of output-format failure. The evaluation should separate clinical/diagnostic errors from serialization or schema-compliance errors, and should ideally include constrained decoding, structured-output APIs, or an output-repair/retry protocol for the baselines.
+2. The evaluation protocol is asymmetric between SSM and the baselines
+SSM-Psychiatrist is evaluated on all 110 cases, whereas each LLM baseline is evaluated on only 22 held-out cases. Although this may be intended to avoid computational cost, it makes the main comparison statistically asymmetric. The much narrower confidence interval reported for SSM is largely a consequence of its five-times-larger evaluation set. A fairer comparison would evaluate all systems on the same held-out cases or otherwise provide a carefully controlled statistical comparison.
+3. The benchmark is entirely synthetic and lacks external clinical validation
+PIB consists of 110 synthetic cases constructed by the authors across 11 diagnostic categories. While such a benchmark is useful for controlled experiments, it is insufficient to establish clinical reliability or safety. Real psychiatric interviews contain substantially more variability, including ambiguous responses, inconsistent histories, unexpected disclosures, comorbidities, and non-cooperative patients. The reported 100% coverage therefore demonstrates performance on the predefined synthetic benchmark rather than clinical coverage in real-world settings. Evaluation on de-identified clinical interviews or an independently constructed expert-validated benchmark would substantially strengthen the work.
+4. The formal coverage guarantee is conditional on the manually designed taxonomy
+The paper presents the SSM as providing a formal clinical coverage guarantee. However, the guarantee is defined relative to the manually specified set of 120 clinical slots. If the slot taxonomy omits a clinically important variable, the system can still achieve 100% formal coverage while failing to achieve actual clinical completeness. Therefore, the formal guarantee should be more precisely characterized as a guarantee of coverage with respect to the predefined taxonomy. The completeness and correctness of the 120-slot taxonomy should also be independently validated by clinical experts.
+5. The contribution of the state machine itself is not sufficiently isolated
+The SSM combines a slot taxonomy, manually defined trigger rules, diagnostic gating, safety priorities, and a termination criterion. It is therefore unclear how much of the reported improvement comes specifically from the state-machine formulation versus the substantial amount of manually encoded clinical knowledge. Important ablations would include an LLM with the same 120-slot checklist but without state-machine enforcement, an LLM with the trigger rules but without formal termination control, and a simpler finite-state baseline. Such experiments would help isolate the independent contribution of the proposed SSM architecture.
+6. The proposed trigger rules should not be conflated with general clinical reasoning
+The T1–T3 mechanisms provide deterministic rule-based scheduling based on predefined clinical signals. This is useful for workflow control, but it is not clear whether it should be characterized as general clinical reasoning. The manuscript would benefit from a clearer distinction between manually encoded clinical decision logic and reasoning performed by the LLM or the agent itself.
+7. The claimed LLM-independent safety guarantee is too strong
+The SSM controls which slots should be collected, but the LLM is still responsible for generating questions and extracting slot values from patient responses. Consequently, the SSM cannot by itself guarantee that the question was clinically appropriate or that the extracted slot state is semantically correct. For example, an incorrect LLM extraction could mark a safety-critical slot as Filled even when the patient's response was ambiguous. The paper should distinguish between guaranteed state-transition coverage and guaranteed clinical correctness.
+8. Refused and Unknown states require stronger clinical validation
+Treating Refused and Unknown as terminal states is reasonable from a finite-state-machine perspective because it prevents infinite questioning. However, counting these states as satisfying the coverage and safety criteria may be clinically questionable, particularly for safety-critical variables such as suicidal ideation. A patient refusing to answer a suicide-risk question does not necessarily imply that the corresponding safety requirement has been clinically resolved. The paper should clarify how such cases are handled in the final risk assessment.
+9. The increase in interview length should be evaluated as a potential cost
+SSM-Psychiatrist requires an average of 11.2 turns, compared with approximately 4–8 turns for the LLM baselines. While the increased coverage is beneficial, longer interviews may impose additional burden on patients and reduce practical usability. The evaluation should therefore consider interview efficiency, redundant-question rate, information gain per turn, and clinician/patient preference rather than treating coverage as the sole optimization objective.
+10. Lack of independent clinical expert evaluation
+The current evaluation relies primarily on automatically defined slot coverage and diagnostic accuracy metrics. Because the proposed taxonomy and rules are themselves manually constructed, independent psychiatrist evaluation would be valuable for assessing question appropriateness, safety completeness, differential-diagnosis adequacy, and the clinical validity of the generated record. This is particularly important given the paper's claims regarding clinical safety and deployability.
+Overall recommendation
+Overall, the paper presents an interesting architectural perspective on clinical interview agents, and the separation between coverage governance and language generation is potentially valuable. However, the strongest empirical claim—97.3% dynamic accuracy versus 0% for all LLM baselines—is substantially confounded by structured-output failure in the baseline evaluation. In addition, the benchmark is entirely synthetic, the evaluation sets are asymmetric, and the proposed formal guarantee is conditional on manually specified clinical slots and rules. These issues make it difficult to conclude that the current system provides a genuine clinical coverage or safety guarantee. I therefore recommend rejection in the current form.
+
+========================================================
+
+-----------------------
+This email address is for sending only. Replies to this email will not be received.

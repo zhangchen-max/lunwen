@@ -1,0 +1,65 @@
+{
+  "release_id": "v1.1.0-rc1",
+  "rows": [
+    {
+      "model_name": "dummy",
+      "provider": "baseline",
+      "run_type": "dynamic",
+      "must_ask_hit_rate": 0.5969696969696969,
+      "svcl_coverage": 0.6818181818181818,
+      "top1_acc": 0.6363636363636364,
+      "top3_cov": 0.7272727272727273,
+      "turns": 5.0,
+      "harm_flags_count": 0.045454545454545456,
+      "worst_module": "PD",
+      "dominant_failure_bucket": "must_ask_miss",
+      "run_id": "run_20260309_113946_17379a09"
+    },
+    {
+      "model_name": "heuristic",
+      "provider": "baseline",
+      "run_type": "static",
+      "must_ask_hit_rate": null,
+      "svcl_coverage": 0.225,
+      "top1_acc": 0.5454545454545454,
+      "top3_cov": 0.5909090909090909,
+      "turns": null,
+      "harm_flags_count": 0.0,
+      "worst_module": "PD",
+      "dominant_failure_bucket": "top1_wrong",
+      "run_id": "run_20260309_115529_c7cbdf95"
+    }
+  ],
+  "availability": [
+    {
+      "model_name": "GPT-5.2",
+      "provider": "openai",
+      "run_type": "dynamic",
+      "status": "failed",
+      "reason": "  File \"/Users/xie/Documents/New project/models/adapters/openai_chat.py\", line 28, in _complete_uncached\n    raise RuntimeError(\"OPENAI_API_KEY is required for OpenAIChatAdapter\")\nRuntimeError: OPENAI_API_KEY is required for OpenAIChatAdapter",
+      "stdout_path": "artifacts/jobs/job_20260309_113946_e43ad2ef/stdout.log",
+      "stderr_path": "artifacts/jobs/job_20260309_113946_e43ad2ef/stderr.log",
+      "run_id": "run_20260309_113946_2c6f7805"
+    },
+    {
+      "model_name": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "run_type": "dynamic",
+      "status": "failed",
+      "reason": "  File \"/Users/xie/Documents/New project/models/adapters/anthropic.py\", line 28, in _complete_uncached\n    raise RuntimeError(\"ANTHROPIC_API_KEY is required for AnthropicAdapter\")\nRuntimeError: ANTHROPIC_API_KEY is required for AnthropicAdapter",
+      "stdout_path": "artifacts/jobs/job_20260309_113947_c5e9f728/stdout.log",
+      "stderr_path": "artifacts/jobs/job_20260309_113947_c5e9f728/stderr.log",
+      "run_id": "run_20260309_113947_a9c8e2a1"
+    },
+    {
+      "model_name": "Qwen3-14B",
+      "provider": "local",
+      "run_type": "dynamic",
+      "status": "failed",
+      "reason": "  File \"/Users/xie/Documents/New project/models/adapters/http_utils.py\", line 28, in post_json\n    raise AdapterHttpError(f\"Failed to reach {url}: {exc.reason}\") from exc\nmodels.adapters.http_utils.AdapterHttpError: Failed to reach http://localhost:8000/v1/chat/completions: [Errno 1] Operation not permitted",
+      "stdout_path": "artifacts/jobs/job_20260309_113947_f2274919/stdout.log",
+      "stderr_path": "artifacts/jobs/job_20260309_113947_f2274919/stderr.log",
+      "run_id": "run_20260309_113947_0525153d"
+    }
+  ]
+}

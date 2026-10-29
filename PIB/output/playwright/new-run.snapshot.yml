@@ -1,0 +1,35 @@
+- main [ref=e3]:
+  - paragraph [ref=e4]:
+    - link "Back to releases" [ref=e5] [cursor=pointer]:
+      - /url: /releases
+  - generic [ref=e6]:
+    - heading "New Run" [level=1] [ref=e7]
+    - paragraph [ref=e8]: Create one static or dynamic benchmark run.
+  - generic [ref=e9]:
+    - generic [ref=e11]:
+      - text: Release
+      - combobox "Release" [ref=e12]:
+        - option "PIB Benchmark v1.1.0-rc1" [selected]
+    - generic [ref=e14]:
+      - text: Run type
+      - combobox "Run type" [ref=e15]:
+        - option "static"
+        - option "dynamic" [selected]
+    - generic [ref=e17]:
+      - text: Provider
+      - combobox "Provider" [ref=e18]:
+        - option "OpenAI" [selected]
+        - option "Anthropic"
+        - option "Local"
+        - option "Baseline"
+    - generic [ref=e20]:
+      - text: Model name
+      - textbox "Model name" [ref=e21]:
+        - /placeholder: gpt-4.1 or dummy
+    - generic [ref=e23]:
+      - text: Split
+      - textbox "Split" [ref=e24]: test
+    - generic [ref=e26]:
+      - text: Notes
+      - textbox "Notes" [ref=e27]
+    - button "Create run" [ref=e29]

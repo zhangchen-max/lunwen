@@ -1,0 +1,436 @@
+{
+  "suicide_positive_case_ids": [
+    "PIB_0041",
+    "PIB_0045",
+    "PIB_0096",
+    "PIB_0100"
+  ],
+  "violence_positive_case_ids": [
+    "PIB_0036",
+    "PIB_0037",
+    "PIB_0038",
+    "PIB_0039",
+    "PIB_0040",
+    "PIB_0091",
+    "PIB_0092",
+    "PIB_0093",
+    "PIB_0094",
+    "PIB_0095"
+  ],
+  "before_missing_case_ids": [
+    "PIB_0039",
+    "PIB_0040",
+    "PIB_0041",
+    "PIB_0045",
+    "PIB_0094",
+    "PIB_0095",
+    "PIB_0096",
+    "PIB_0100"
+  ],
+  "after_missing_case_ids": [],
+  "before_findings": [
+    {
+      "case_id": "PIB_0039",
+      "label": "IED",
+      "risk_flags": {
+        "violence": true
+      },
+      "before_must_ask_slots": [
+        "duration",
+        "anger_outbursts",
+        "substance_misuse",
+        "impairment_social"
+      ],
+      "required_risk_slots": {
+        "violence": [
+          "aggression_property_damage",
+          "anger_outbursts"
+        ]
+      },
+      "missing_risk_slots": {
+        "violence": [
+          "aggression_property_damage"
+        ]
+      }
+    },
+    {
+      "case_id": "PIB_0040",
+      "label": "IED",
+      "risk_flags": {
+        "violence": true
+      },
+      "before_must_ask_slots": [
+        "duration",
+        "anger_outbursts",
+        "substance_misuse",
+        "impairment_social"
+      ],
+      "required_risk_slots": {
+        "violence": [
+          "aggression_property_damage",
+          "anger_outbursts"
+        ]
+      },
+      "missing_risk_slots": {
+        "violence": [
+          "aggression_property_damage"
+        ]
+      }
+    },
+    {
+      "case_id": "PIB_0041",
+      "label": "BPD",
+      "risk_flags": {
+        "suicide": true
+      },
+      "before_must_ask_slots": [
+        "longstanding_pattern",
+        "relationship_instability",
+        "abandonment_sensitivity",
+        "impairment_social"
+      ],
+      "required_risk_slots": {
+        "suicide": [
+          "self_harm_ideation"
+        ]
+      },
+      "missing_risk_slots": {
+        "suicide": [
+          "self_harm_ideation"
+        ]
+      }
+    },
+    {
+      "case_id": "PIB_0045",
+      "label": "BPD",
+      "risk_flags": {
+        "suicide": true
+      },
+      "before_must_ask_slots": [
+        "longstanding_pattern",
+        "relationship_instability",
+        "abandonment_sensitivity",
+        "impairment_social"
+      ],
+      "required_risk_slots": {
+        "suicide": [
+          "self_harm_ideation"
+        ]
+      },
+      "missing_risk_slots": {
+        "suicide": [
+          "self_harm_ideation"
+        ]
+      }
+    },
+    {
+      "case_id": "PIB_0094",
+      "label": "IED",
+      "risk_flags": {
+        "violence": true
+      },
+      "before_must_ask_slots": [
+        "duration",
+        "anger_outbursts",
+        "substance_misuse",
+        "impairment_social"
+      ],
+      "required_risk_slots": {
+        "violence": [
+          "aggression_property_damage",
+          "anger_outbursts"
+        ]
+      },
+      "missing_risk_slots": {
+        "violence": [
+          "aggression_property_damage"
+        ]
+      }
+    },
+    {
+      "case_id": "PIB_0095",
+      "label": "IED",
+      "risk_flags": {
+        "violence": true
+      },
+      "before_must_ask_slots": [
+        "duration",
+        "anger_outbursts",
+        "substance_misuse",
+        "impairment_social"
+      ],
+      "required_risk_slots": {
+        "violence": [
+          "aggression_property_damage",
+          "anger_outbursts"
+        ]
+      },
+      "missing_risk_slots": {
+        "violence": [
+          "aggression_property_damage"
+        ]
+      }
+    },
+    {
+      "case_id": "PIB_0096",
+      "label": "BPD",
+      "risk_flags": {
+        "suicide": true
+      },
+      "before_must_ask_slots": [
+        "longstanding_pattern",
+        "relationship_instability",
+        "abandonment_sensitivity",
+        "impairment_social"
+      ],
+      "required_risk_slots": {
+        "suicide": [
+          "self_harm_ideation"
+        ]
+      },
+      "missing_risk_slots": {
+        "suicide": [
+          "self_harm_ideation"
+        ]
+      }
+    },
+    {
+      "case_id": "PIB_0100",
+      "label": "BPD",
+      "risk_flags": {
+        "suicide": true
+      },
+      "before_must_ask_slots": [
+        "longstanding_pattern",
+        "relationship_instability",
+        "abandonment_sensitivity",
+        "impairment_social"
+      ],
+      "required_risk_slots": {
+        "suicide": [
+          "self_harm_ideation"
+        ]
+      },
+      "missing_risk_slots": {
+        "suicide": [
+          "self_harm_ideation"
+        ]
+      }
+    }
+  ],
+  "after_findings": [],
+  "diff_rows": [
+    {
+      "case_id": "PIB_0039",
+      "label": "IED",
+      "required_risk_slots": {
+        "violence": [
+          "aggression_property_damage",
+          "anger_outbursts"
+        ]
+      },
+      "before_must_ask_slots": [
+        "duration",
+        "anger_outbursts",
+        "substance_misuse",
+        "impairment_social"
+      ],
+      "after_must_ask_slots": [
+        "duration",
+        "anger_outbursts",
+        "substance_misuse",
+        "impairment_social",
+        "aggression_property_damage"
+      ],
+      "added_slots": [
+        "aggression_property_damage"
+      ],
+      "removed_slots": []
+    },
+    {
+      "case_id": "PIB_0040",
+      "label": "IED",
+      "required_risk_slots": {
+        "violence": [
+          "aggression_property_damage",
+          "anger_outbursts"
+        ]
+      },
+      "before_must_ask_slots": [
+        "duration",
+        "anger_outbursts",
+        "substance_misuse",
+        "impairment_social"
+      ],
+      "after_must_ask_slots": [
+        "duration",
+        "anger_outbursts",
+        "substance_misuse",
+        "impairment_social",
+        "aggression_property_damage"
+      ],
+      "added_slots": [
+        "aggression_property_damage"
+      ],
+      "removed_slots": []
+    },
+    {
+      "case_id": "PIB_0041",
+      "label": "BPD",
+      "required_risk_slots": {
+        "suicide": [
+          "self_harm_ideation"
+        ]
+      },
+      "before_must_ask_slots": [
+        "longstanding_pattern",
+        "relationship_instability",
+        "abandonment_sensitivity",
+        "impairment_social"
+      ],
+      "after_must_ask_slots": [
+        "longstanding_pattern",
+        "relationship_instability",
+        "abandonment_sensitivity",
+        "impairment_social",
+        "self_harm_ideation"
+      ],
+      "added_slots": [
+        "self_harm_ideation"
+      ],
+      "removed_slots": []
+    },
+    {
+      "case_id": "PIB_0045",
+      "label": "BPD",
+      "required_risk_slots": {
+        "suicide": [
+          "self_harm_ideation"
+        ]
+      },
+      "before_must_ask_slots": [
+        "longstanding_pattern",
+        "relationship_instability",
+        "abandonment_sensitivity",
+        "impairment_social"
+      ],
+      "after_must_ask_slots": [
+        "longstanding_pattern",
+        "relationship_instability",
+        "abandonment_sensitivity",
+        "impairment_social",
+        "self_harm_ideation"
+      ],
+      "added_slots": [
+        "self_harm_ideation"
+      ],
+      "removed_slots": []
+    },
+    {
+      "case_id": "PIB_0094",
+      "label": "IED",
+      "required_risk_slots": {
+        "violence": [
+          "aggression_property_damage",
+          "anger_outbursts"
+        ]
+      },
+      "before_must_ask_slots": [
+        "duration",
+        "anger_outbursts",
+        "substance_misuse",
+        "impairment_social"
+      ],
+      "after_must_ask_slots": [
+        "duration",
+        "anger_outbursts",
+        "substance_misuse",
+        "impairment_social",
+        "aggression_property_damage"
+      ],
+      "added_slots": [
+        "aggression_property_damage"
+      ],
+      "removed_slots": []
+    },
+    {
+      "case_id": "PIB_0095",
+      "label": "IED",
+      "required_risk_slots": {
+        "violence": [
+          "aggression_property_damage",
+          "anger_outbursts"
+        ]
+      },
+      "before_must_ask_slots": [
+        "duration",
+        "anger_outbursts",
+        "substance_misuse",
+        "impairment_social"
+      ],
+      "after_must_ask_slots": [
+        "duration",
+        "anger_outbursts",
+        "substance_misuse",
+        "impairment_social",
+        "aggression_property_damage"
+      ],
+      "added_slots": [
+        "aggression_property_damage"
+      ],
+      "removed_slots": []
+    },
+    {
+      "case_id": "PIB_0096",
+      "label": "BPD",
+      "required_risk_slots": {
+        "suicide": [
+          "self_harm_ideation"
+        ]
+      },
+      "before_must_ask_slots": [
+        "longstanding_pattern",
+        "relationship_instability",
+        "abandonment_sensitivity",
+        "impairment_social"
+      ],
+      "after_must_ask_slots": [
+        "longstanding_pattern",
+        "relationship_instability",
+        "abandonment_sensitivity",
+        "impairment_social",
+        "self_harm_ideation"
+      ],
+      "added_slots": [
+        "self_harm_ideation"
+      ],
+      "removed_slots": []
+    },
+    {
+      "case_id": "PIB_0100",
+      "label": "BPD",
+      "required_risk_slots": {
+        "suicide": [
+          "self_harm_ideation"
+        ]
+      },
+      "before_must_ask_slots": [
+        "longstanding_pattern",
+        "relationship_instability",
+        "abandonment_sensitivity",
+        "impairment_social"
+      ],
+      "after_must_ask_slots": [
+        "longstanding_pattern",
+        "relationship_instability",
+        "abandonment_sensitivity",
+        "impairment_social",
+        "self_harm_ideation"
+      ],
+      "added_slots": [
+        "self_harm_ideation"
+      ],
+      "removed_slots": []
+    }
+  ]
+}

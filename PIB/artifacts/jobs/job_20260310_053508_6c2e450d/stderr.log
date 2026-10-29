@@ -1,0 +1,66 @@
+
+dynamic:   0%|          | 0/22 [00:00<?, ?it/s]
+dynamic:   5%|▍         | 1/22 [03:40<1:17:00, 220.03s/it]
+dynamic:   9%|▉         | 2/22 [06:08<59:17, 177.85s/it]  
+dynamic:  14%|█▎        | 3/22 [09:29<59:42, 188.55s/it]
+dynamic:  18%|█▊        | 4/22 [11:36<49:18, 164.37s/it]
+dynamic:  18%|█▊        | 4/22 [14:03<1:03:15, 210.87s/it]
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/xie/Documents/New project/eval/run_dynamic.py", line 346, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/xie/Documents/New project/eval/run_dynamic.py", line 322, in main
+    run_dynamic(
+  File "/Users/xie/Documents/New project/eval/run_dynamic.py", line 133, in run_dynamic
+    action = doctor.next_action(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/Users/xie/Documents/New project/agents/doctor_agent.py", line 261, in next_action
+    action = parse_with_retry(_call, prompt, max_retries=2)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xie/Documents/New project/models/parsing.py", line 81, in parse_with_retry
+    raw = call_model(effective_prompt)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xie/Documents/New project/agents/doctor_agent.py", line 255, in _call
+    return self.adapter.complete([
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xie/Documents/New project/models/adapters/base.py", line 44, in complete
+    response = self._complete_uncached(messages, temperature)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xie/Documents/New project/models/adapters/openai_chat.py", line 39, in _complete_uncached
+    response = post_json(self.endpoint, payload=payload, headers=headers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/xie/Documents/New project/models/adapters/http_utils.py", line 22, in post_json
+    with request.urlopen(req, timeout=timeout) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 1373, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 1348, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1428, in getresponse
+    response.begin()
+  File "/opt/homebrew/Cellar/python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/socket.py", line 708, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out

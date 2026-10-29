@@ -1,0 +1,3 @@
+baseline_group,baseline_name,harm_flags_count,metrics_json,must_ask_hit_rate,n_cases,oracle_policy,predictions_jsonl,split,status,task,top1_acc,top5_cov,turns
+pure,static_heuristic,0.0,results/static/test_static/run_010/metrics.json,,22,no_oracle,results/static/test_static/run_010/predictions.jsonl,test,active,static,0.5454545454545454,0.7727272727272727,
+pure,dynamic_dummy,0.045454545454545456,results/dynamic/test_dynamic/run_011/metrics.json,0.5969696969696969,22,no_oracle,results/dynamic/test_dynamic/run_011/predictions.jsonl,test,active,dynamic,0.6363636363636364,0.8181818181818182,5.0

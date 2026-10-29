@@ -1,0 +1,243 @@
+- main [ref=e30]:
+  - paragraph [ref=e31]:
+    - link "Back to releases" [ref=e32] [cursor=pointer]:
+      - /url: /releases
+    - text: ·
+    - link "New run" [ref=e33] [cursor=pointer]:
+      - /url: /runs/new
+  - generic [ref=e34]:
+    - heading "Run Summary" [level=1] [ref=e35]
+    - paragraph [ref=e36]: Minimal run status and metadata view.
+  - generic [ref=e37]:
+    - generic [ref=e38]:
+      - strong [ref=e39]: "Run ID:"
+      - text: run_20260309_121353_133aa7f6
+    - generic [ref=e40]:
+      - strong [ref=e41]: "Release:"
+      - text: v1.1.0-rc1
+    - generic [ref=e42]:
+      - strong [ref=e43]: "Type:"
+      - text: dynamic
+    - generic [ref=e44]:
+      - strong [ref=e45]: "Provider:"
+      - text: baseline
+    - generic [ref=e46]:
+      - strong [ref=e47]: "Model:"
+      - text: dummy
+    - generic [ref=e48]:
+      - strong [ref=e49]: "Split:"
+      - text: test
+    - generic [ref=e50]:
+      - strong [ref=e51]: "Status:"
+      - text: completed
+    - generic [ref=e52]:
+      - strong [ref=e53]: "Created:"
+      - text: 2026-03-09T12:13:53Z
+    - generic [ref=e54]:
+      - strong [ref=e55]: "Started:"
+      - text: 2026-03-09T12:13:53Z
+    - generic [ref=e56]:
+      - strong [ref=e57]: "Finished:"
+      - text: 2026-03-09T12:13:53Z
+    - generic [ref=e58]:
+      - strong [ref=e59]: "Results root:"
+      - code [ref=e60]: results/dynamic/dummy/run_20260309_121353_133aa7f6/run_001/
+    - generic [ref=e61]:
+      - strong [ref=e62]: "Metrics path:"
+      - code [ref=e63]: results/dynamic/dummy/run_20260309_121353_133aa7f6/run_001/metrics.json
+    - generic [ref=e64]:
+      - strong [ref=e65]: "Summary path:"
+      - code [ref=e66]: results/dynamic/dummy/run_20260309_121353_133aa7f6/run_001/summary.csv
+  - generic [ref=e72]:
+    - heading "Overall metrics" [level=2] [ref=e73]
+    - generic [ref=e74]:
+      - generic [ref=e75]:
+        - generic [ref=e76]: Top-1 Accuracy
+        - generic [ref=e77]: "0.6364"
+      - generic [ref=e78]:
+        - generic [ref=e79]: Top-3 Coverage
+        - generic [ref=e80]: "0.7273"
+      - generic [ref=e81]:
+        - generic [ref=e82]: Top-5 Coverage
+        - generic [ref=e83]: "0.8182"
+      - generic [ref=e84]:
+        - generic [ref=e85]: Must-Ask Hit Rate
+        - generic [ref=e86]: "0.5970"
+      - generic [ref=e87]:
+        - generic [ref=e88]: SVCL Coverage
+        - generic [ref=e89]: "0.6818"
+      - generic [ref=e90]:
+        - generic [ref=e91]: Turns
+        - generic [ref=e92]: "5"
+      - generic [ref=e93]:
+        - generic [ref=e94]: Harm Flags Count
+        - generic [ref=e95]: "0.045454545454545456"
+      - generic [ref=e96]:
+        - generic [ref=e97]: Strict Top-1 Accuracy
+        - generic [ref=e98]: "0.6364"
+      - generic [ref=e99]:
+        - generic [ref=e100]: strict_top3_cov
+        - generic [ref=e101]: "0.7273"
+      - generic [ref=e102]:
+        - generic [ref=e103]: Strict Top-5 Coverage
+        - generic [ref=e104]: "0.7727"
+      - generic [ref=e105]:
+        - generic [ref=e106]: svcl_domain_coverage
+        - generic [ref=e107]: "0.6818"
+      - generic [ref=e108]:
+        - generic [ref=e109]: turns_to_hit_all_must_ask
+        - generic [ref=e110]: "5"
+      - generic [ref=e111]:
+        - generic [ref=e112]: n_cases
+        - generic [ref=e113]: "22"
+  - generic [ref=e115]:
+    - heading "Baseline compare" [level=2] [ref=e116]
+    - generic [ref=e118]: 5 deprecated benchmark result artifacts are present and excluded from baseline matching.
+    - table [ref=e119]:
+      - rowgroup [ref=e120]:
+        - row "metric_key current_value pure_baseline_value guided_baseline_value delta_vs_pure delta_vs_guided" [ref=e121]:
+          - columnheader "metric_key" [ref=e122]
+          - columnheader "current_value" [ref=e123]
+          - columnheader "pure_baseline_value" [ref=e124]
+          - columnheader "guided_baseline_value" [ref=e125]
+          - columnheader "delta_vs_pure" [ref=e126]
+          - columnheader "delta_vs_guided" [ref=e127]
+      - rowgroup [ref=e128]:
+        - row "top1_acc 0.6364 0.6364 — 0.0000 —" [ref=e129]:
+          - cell "top1_acc" [ref=e130]
+          - cell "0.6364" [ref=e131]
+          - cell "0.6364" [ref=e132]
+          - cell "—" [ref=e133]
+          - cell "0.0000" [ref=e134]
+          - cell "—" [ref=e135]
+        - row "top3_cov 0.7273 — — — —" [ref=e136]:
+          - cell "top3_cov" [ref=e137]
+          - cell "0.7273" [ref=e138]
+          - cell "—" [ref=e139]
+          - cell "—" [ref=e140]
+          - cell "—" [ref=e141]
+          - cell "—" [ref=e142]
+        - row "top5_cov 0.8182 0.8182 — 0.0000 —" [ref=e143]:
+          - cell "top5_cov" [ref=e144]
+          - cell "0.8182" [ref=e145]
+          - cell "0.8182" [ref=e146]
+          - cell "—" [ref=e147]
+          - cell "0.0000" [ref=e148]
+          - cell "—" [ref=e149]
+        - row "must_ask_hit_rate 0.5970 0.5970 — 0.0000 —" [ref=e150]:
+          - cell "must_ask_hit_rate" [ref=e151]
+          - cell "0.5970" [ref=e152]
+          - cell "0.5970" [ref=e153]
+          - cell "—" [ref=e154]
+          - cell "0.0000" [ref=e155]
+          - cell "—" [ref=e156]
+        - row "svcl_coverage 0.6818 — — — —" [ref=e157]:
+          - cell "svcl_coverage" [ref=e158]
+          - cell "0.6818" [ref=e159]
+          - cell "—" [ref=e160]
+          - cell "—" [ref=e161]
+          - cell "—" [ref=e162]
+          - cell "—" [ref=e163]
+        - row "turns 5.0000 5.0000 — 0.0000 —" [ref=e164]:
+          - cell "turns" [ref=e165]
+          - cell "5.0000" [ref=e166]
+          - cell "5.0000" [ref=e167]
+          - cell "—" [ref=e168]
+          - cell "0.0000" [ref=e169]
+          - cell "—" [ref=e170]
+        - row "harm_flags_count 0.0455 0.0455 — 0.0000 —" [ref=e171]:
+          - cell "harm_flags_count" [ref=e172]
+          - cell "0.0455" [ref=e173]
+          - cell "0.0455" [ref=e174]
+          - cell "—" [ref=e175]
+          - cell "0.0000" [ref=e176]
+          - cell "—" [ref=e177]
+        - row "strict_top1_acc 0.6364 — — — —" [ref=e178]:
+          - cell "strict_top1_acc" [ref=e179]
+          - cell "0.6364" [ref=e180]
+          - cell "—" [ref=e181]
+          - cell "—" [ref=e182]
+          - cell "—" [ref=e183]
+          - cell "—" [ref=e184]
+        - row "strict_top3_cov 0.7273 — — — —" [ref=e185]:
+          - cell "strict_top3_cov" [ref=e186]
+          - cell "0.7273" [ref=e187]
+          - cell "—" [ref=e188]
+          - cell "—" [ref=e189]
+          - cell "—" [ref=e190]
+          - cell "—" [ref=e191]
+        - row "strict_top5_cov 0.7727 — — — —" [ref=e192]:
+          - cell "strict_top5_cov" [ref=e193]
+          - cell "0.7727" [ref=e194]
+          - cell "—" [ref=e195]
+          - cell "—" [ref=e196]
+          - cell "—" [ref=e197]
+          - cell "—" [ref=e198]
+        - row "svcl_domain_coverage 0.6818 — — — —" [ref=e199]:
+          - cell "svcl_domain_coverage" [ref=e200]
+          - cell "0.6818" [ref=e201]
+          - cell "—" [ref=e202]
+          - cell "—" [ref=e203]
+          - cell "—" [ref=e204]
+          - cell "—" [ref=e205]
+        - row "turns_to_hit_all_must_ask 5.0000 — — — —" [ref=e206]:
+          - cell "turns_to_hit_all_must_ask" [ref=e207]
+          - cell "5.0000" [ref=e208]
+          - cell "—" [ref=e209]
+          - cell "—" [ref=e210]
+          - cell "—" [ref=e211]
+          - cell "—" [ref=e212]
+        - row "n_cases 22.0000 22.0000 — 0.0000 —" [ref=e213]:
+          - cell "n_cases" [ref=e214]
+          - cell "22.0000" [ref=e215]
+          - cell "22.0000" [ref=e216]
+          - cell "—" [ref=e217]
+          - cell "0.0000" [ref=e218]
+          - cell "—" [ref=e219]
+  - link "View slices" [ref=e221] [cursor=pointer]:
+    - /url: /runs/run_20260309_121353_133aa7f6/slices
+  - generic [ref=e69]:
+    - heading "Artifacts" [level=2] [ref=e70]
+    - table [ref=e222]:
+      - rowgroup [ref=e223]:
+        - row "label kind size download" [ref=e224]:
+          - columnheader "label" [ref=e225]
+          - columnheader "kind" [ref=e226]
+          - columnheader "size" [ref=e227]
+          - columnheader "download" [ref=e228]
+      - rowgroup [ref=e229]:
+        - row "metrics.json metrics 20342 Download" [ref=e230]:
+          - cell "metrics.json" [ref=e231]
+          - cell "metrics" [ref=e232]
+          - cell "20342" [ref=e233]
+          - cell "Download" [ref=e234]:
+            - link "Download" [ref=e235] [cursor=pointer]:
+              - /url: /api/runs/run_20260309_121353_133aa7f6/artifacts/download?path=results%2Fdynamic%2Fdummy%2Frun_20260309_121353_133aa7f6%2Frun_001%2Fmetrics.json
+        - row "summary.csv summary 3317 Download" [ref=e236]:
+          - cell "summary.csv" [ref=e237]
+          - cell "summary" [ref=e238]
+          - cell "3317" [ref=e239]
+          - cell "Download" [ref=e240]:
+            - link "Download" [ref=e241] [cursor=pointer]:
+              - /url: /api/runs/run_20260309_121353_133aa7f6/artifacts/download?path=results%2Fdynamic%2Fdummy%2Frun_20260309_121353_133aa7f6%2Frun_001%2Fsummary.csv
+        - row "predictions.jsonl predictions 85198 Download" [ref=e242]:
+          - cell "predictions.jsonl" [ref=e243]
+          - cell "predictions" [ref=e244]
+          - cell "85198" [ref=e245]
+          - cell "Download" [ref=e246]:
+            - link "Download" [ref=e247] [cursor=pointer]:
+              - /url: /api/runs/run_20260309_121353_133aa7f6/artifacts/download?path=results%2Fdynamic%2Fdummy%2Frun_20260309_121353_133aa7f6%2Frun_001%2Fpredictions.jsonl
+        - row "stdout.log log 79 Download" [ref=e248]:
+          - cell "stdout.log" [ref=e249]
+          - cell "log" [ref=e250]
+          - cell "79" [ref=e251]
+          - cell "Download" [ref=e252]:
+            - link "Download" [ref=e253] [cursor=pointer]:
+              - /url: /api/runs/run_20260309_121353_133aa7f6/artifacts/download?path=artifacts%2Fjobs%2Fjob_20260309_121353_1db5a103%2Fstdout.log
+        - row "stderr.log log 128 Download" [ref=e254]:
+          - cell "stderr.log" [ref=e255]
+          - cell "log" [ref=e256]
+          - cell "128" [ref=e257]
+          - cell "Download" [ref=e258]:
+            - link "Download" [ref=e259] [cursor=pointer]:
+              - /url: /api/runs/run_20260309_121353_133aa7f6/artifacts/download?path=artifacts%2Fjobs%2Fjob_20260309_121353_1db5a103%2Fstderr.log

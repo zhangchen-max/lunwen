@@ -1,0 +1,15 @@
+{
+  "version": "pib-v1.1.0-rc1",
+  "slot_count": 120,
+  "dynamic": {
+    "max_turns": 15,
+    "max_repeat_same_slot": 2
+  },
+  "labels": {
+    "os_ocrd_subtypes": [
+      "OS_OCRD_BFRB",
+      "OS_OCRD_JEAL",
+      "OS_OCRD_OTHER"
+    ]
+  }
+}

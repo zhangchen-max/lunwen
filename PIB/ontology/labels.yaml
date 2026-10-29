@@ -1,0 +1,32 @@
+{
+  "modules": {
+    "TSR": ["ADJ", "PGD"],
+    "OCRD": ["OCD", "BDD", "OS_OCRD"],
+    "SSRD": ["SSD"],
+    "DEP": ["PMDD"],
+    "DICCD": ["IED"],
+    "PD": ["BPD", "OCPD"]
+  },
+  "labels": {
+    "ADJ": {"name_cn": "适应障碍", "module": "TSR"},
+    "PGD": {"name_cn": "延长哀伤障碍", "module": "TSR"},
+    "OCD": {"name_cn": "强迫症", "module": "OCRD"},
+    "BDD": {"name_cn": "躯体变形障碍", "module": "OCRD"},
+    "OS_OCRD": {
+      "name_cn": "其他特定OCRD",
+      "module": "OCRD",
+      "require_subtype": true,
+      "allowed_subtypes": [
+        "OS_OCRD_BFRB",
+        "OS_OCRD_JEAL",
+        "OS_OCRD_OTHER"
+      ]
+    },
+    "SSD": {"name_cn": "躯体症状障碍", "module": "SSRD"},
+    "PMDD": {"name_cn": "经前期烦躁障碍", "module": "DEP"},
+    "IED": {"name_cn": "间歇性暴怒障碍", "module": "DICCD"},
+    "BPD": {"name_cn": "边缘型人格障碍", "module": "PD"},
+    "OCPD": {"name_cn": "强迫型人格障碍", "module": "PD"},
+    "OTHER": {"name_cn": "其他/不明确", "module": "OTHER"}
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "benchmark_version": "1.1.0-rc1",
+  "dataset_version": "1.1.0-rc1",
+  "scoring_policy_version": "1.1.0-rc1",
+  "no_oracle_policy_version": "1.1.0-rc1",
+  "project_version": "1.1.0-rc1",
+  "hard_constraints": {
+    "slot_count": 120,
+    "dynamic_max_turns_cap": 15,
+    "os_ocrd_subtypes": [
+      "OS_OCRD_BFRB",
+      "OS_OCRD_JEAL",
+      "OS_OCRD_OTHER"
+    ]
+  },
+  "dataset_hash_sha256": "c42e6f02ba2c749a74888f99a07ad1d7e0267a9b35e698cb4400882cf3792c5e",
+  "scoring_hash_sha256": "e08ed5d9c5026ed2b7336f4f683d62d61656ca3fb0742c223f8e2793f328533b",
+  "lockfile_hash_sha256": "ca0ee9e0f9f1b796ef127929204a354d6692d2500d4397dc119c887bf465ab8b",
+  "cases_sha256": "d2816dbeb52b88aa4d8316c58594b4287397606f34e3cf3694d91b094a2ab809",
+  "rubrics_sha256": "a30e9ea50e890bacad83e91ba1768cd8da334d41244c64867b4b8ec235505587",
+  "splits_sha256": "3f8bc6de50792df3a8ef210e92eefdcc2d4245787add8679a26f822086645dd5",
+  "dataset_files": [
+    "pib_config.yaml",
+    "ontology/labels.yaml",
+    "ontology/slots.yaml",
+    "ontology/svcl_domains.yaml",
+    "ontology/svcl_map.yaml",
+    "data/cases.jsonl",
+    "data/rubrics.jsonl",
+    "data/splits/train_ids.txt",
+    "data/splits/dev_ids.txt",
+    "data/splits/test_ids.txt"
+  ],
+  "dataset_file_hashes": {
+    "pib_config.yaml": "4a7551cea4e27f9cba6341dc9ea6d26ccbcaf601986322a7884069b3adc17517",
+    "ontology/labels.yaml": "093e5530311792778bc7236100430df57b27b6fa21f474db081a5c481d876590",
+    "ontology/slots.yaml": "ff6b2bdaa24b6b68c715463918784210e43e5609449b0a6e06c73495dd7016e5",
+    "ontology/svcl_domains.yaml": "6c4397dbe9b9468eae45bcb1d2bffa2f2cec30e8c79235faa181eceeaedcd39a",
+    "ontology/svcl_map.yaml": "5aa296c696e6147f65726faf4517f933988065c4d6b780a3f8060865f6624d67",
+    "data/cases.jsonl": "d2816dbeb52b88aa4d8316c58594b4287397606f34e3cf3694d91b094a2ab809",
+    "data/rubrics.jsonl": "a30e9ea50e890bacad83e91ba1768cd8da334d41244c64867b4b8ec235505587",
+    "data/splits/train_ids.txt": "21e552956e035a6f64ed4eb4a6a91a18076dd742a4d3e967b7d09c0bd63be871",
+    "data/splits/dev_ids.txt": "99ea64a70b733643a7dbb83d24300cfb3d020d0a8c2609534e61676df2762272",
+    "data/splits/test_ids.txt": "1ba7b79dd381d8b3bf5b62a45832e2866dc51cf59e217ccadd578745924f049e"
+  },
+  "scoring_files": [
+    "eval/constants.py",
+    "eval/risk.py",
+    "eval/scorers/ddx_metrics.py",
+    "eval/scorers/static_metrics.py",
+    "eval/scorers/dynamic_metrics.py",
+    "eval/scorers/safety_rules.py"
+  ],
+  "scoring_file_hashes": {
+    "eval/constants.py": "c2a06661d1984cebd842834efdb2f9158f816de295b944a849a328456a28e937",
+    "eval/risk.py": "da29e289938c51b3330c6de128b5c4db6756a6665e34ad3e2803b3df88db3854",
+    "eval/scorers/ddx_metrics.py": "5d52e8c818fe07193c752fe2a60eddcb11e1f723827db0a0c1d1479ca66c8171",
+    "eval/scorers/static_metrics.py": "eb917931987b930c38ec45169387ba14ef136f80ef1b0cba8f1d7490f698622c",
+    "eval/scorers/dynamic_metrics.py": "84e09ee5ce55deaa7061aeaf24089436b5c8dad7b80cae9f1321ea9870e9a3af",
+    "eval/scorers/safety_rules.py": "ae7785c2e3d35581bcb453966ce0a80a10d270bf61a8439fdb5b26a1c9ef5228"
+  },
+  "lockfile": "requirements.lock",
+  "case_counts": {
+    "cases": 110,
+    "rubrics": 110,
+    "psychosis_positive": 2,
+    "substance_positive": 2,
+    "suicide_positive": 4,
+    "violence_positive": 10
+  }
+}

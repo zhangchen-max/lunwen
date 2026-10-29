@@ -1,0 +1,35 @@
+{
+  "benchmark_version": "1.1.0-rc1",
+  "deprecated_results": [
+    {
+      "path": "results/dynamic/dummy_dynamic.jsonl",
+      "kind": "legacy_output_jsonl",
+      "deprecated_reason": "pre-no-oracle-fix dynamic dummy consumed rubric.must_ask_slots",
+      "deprecation_marker": "results/dynamic/dummy_dynamic.jsonl.DEPRECATED.txt"
+    },
+    {
+      "path": "results/dynamic/test_dynamic/run_001",
+      "kind": "run_artifact_dir",
+      "deprecated_reason": "pre-no-oracle-fix dynamic dummy consumed rubric.must_ask_slots",
+      "deprecation_marker": "results/dynamic/test_dynamic/run_001/DEPRECATED.txt"
+    },
+    {
+      "path": "results/dynamic/test_dynamic/run_002",
+      "kind": "run_artifact_dir",
+      "deprecated_reason": "pre-no-oracle-fix dynamic dummy consumed rubric.must_ask_slots",
+      "deprecation_marker": "results/dynamic/test_dynamic/run_002/DEPRECATED.txt"
+    },
+    {
+      "path": "results/dynamic/test_dynamic/run_003",
+      "kind": "run_artifact_dir",
+      "deprecated_reason": "pre-no-oracle-fix dynamic dummy consumed rubric.must_ask_slots",
+      "deprecation_marker": "results/dynamic/test_dynamic/run_003/DEPRECATED.txt"
+    },
+    {
+      "path": "results/dynamic/test_dynamic/run_004",
+      "kind": "run_artifact_dir",
+      "deprecated_reason": "pre-no-oracle-fix dynamic dummy consumed rubric.must_ask_slots",
+      "deprecation_marker": "results/dynamic/test_dynamic/run_004/DEPRECATED.txt"
+    }
+  ]
+}

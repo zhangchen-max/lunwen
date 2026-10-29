@@ -1,0 +1,4 @@
+model_name,provider,run_type,scope,status,must_ask_hit_rate,svcl_coverage,top1_acc,top3_cov,turns,harm_flags_count,dominant_failure_bucket,notes
+"gpt-5.2","gpt_oauth","dynamic","5-case subset","completed",0.84,0.85,0.0,0.0,4.6,0.0,"parse_or_execution_error","Good evidence collection but benchmark-invalid final outputs across all 5 cases."
+"gpt-5.2","gpt_oauth","static","same 5-case subset","completed",,,1.0,1.0,,0.0,"none","Static diagnosis control is strong on the same subset."
+"gpt-5.2","gpt_oauth","dynamic","full test split","failed",,,,,,,"run timeout","Local OAuth relay timed out after 4/22 cases; see job_20260310_053508_6c2e450d."

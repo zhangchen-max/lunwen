@@ -1,0 +1,95 @@
+{
+  "benchmark_version": "1.1.0-rc1",
+  "scoring_policy_version": "1.1.0-rc1",
+  "no_oracle_policy_version": "1.1.0-rc1",
+  "pure_baselines": [
+    {
+      "baseline_group": "pure",
+      "baseline_name": "static_heuristic",
+      "task": "static",
+      "status": "active",
+      "oracle_policy": "no_oracle",
+      "split": "test",
+      "metrics_json": "results/static/test_static/run_007/metrics.json",
+      "predictions_jsonl": "results/static/test_static/run_007/predictions.jsonl",
+      "n_cases": 22,
+      "top1_acc": 0.5454545454545454,
+      "top5_cov": 0.7727272727272727,
+      "must_ask_hit_rate": null,
+      "turns": null,
+      "harm_flags_count": 0.0
+    },
+    {
+      "baseline_group": "pure",
+      "baseline_name": "dynamic_dummy",
+      "task": "dynamic",
+      "status": "active",
+      "oracle_policy": "no_oracle",
+      "split": "test",
+      "metrics_json": "results/dynamic/test_dynamic/run_007/metrics.json",
+      "predictions_jsonl": "results/dynamic/test_dynamic/run_007/predictions.jsonl",
+      "n_cases": 22,
+      "top1_acc": 0.6363636363636364,
+      "top5_cov": 0.8181818181818182,
+      "must_ask_hit_rate": 0.5969696969696969,
+      "turns": 5.0,
+      "harm_flags_count": 0.045454545454545456
+    }
+  ],
+  "guided_llm_baselines": [
+    {
+      "baseline_group": "guided_llm",
+      "baseline_name": "static_llm_guided",
+      "task": "static",
+      "status": "reported_separately",
+      "oracle_policy": "guided",
+      "split": "test",
+      "metrics_json": null,
+      "predictions_jsonl": null,
+      "note": "LLM baseline receives ontology-guided structured prompts and is excluded from the pure baseline main table."
+    },
+    {
+      "baseline_group": "guided_llm",
+      "baseline_name": "dynamic_llm_guided",
+      "task": "dynamic",
+      "status": "reported_separately",
+      "oracle_policy": "guided",
+      "split": "test",
+      "metrics_json": null,
+      "predictions_jsonl": null,
+      "note": "LLM baseline receives ontology-guided structured prompts and is excluded from the pure baseline main table."
+    }
+  ],
+  "deprecated_results": [
+    {
+      "path": "results/dynamic/dummy_dynamic.jsonl",
+      "kind": "legacy_output_jsonl",
+      "deprecated_reason": "pre-no-oracle-fix dynamic dummy consumed rubric.must_ask_slots",
+      "deprecation_marker": "results/dynamic/dummy_dynamic.jsonl.DEPRECATED.txt"
+    },
+    {
+      "path": "results/dynamic/test_dynamic/run_001",
+      "kind": "run_artifact_dir",
+      "deprecated_reason": "pre-no-oracle-fix dynamic dummy consumed rubric.must_ask_slots",
+      "deprecation_marker": "results/dynamic/test_dynamic/run_001/DEPRECATED.txt"
+    },
+    {
+      "path": "results/dynamic/test_dynamic/run_002",
+      "kind": "run_artifact_dir",
+      "deprecated_reason": "pre-no-oracle-fix dynamic dummy consumed rubric.must_ask_slots",
+      "deprecation_marker": "results/dynamic/test_dynamic/run_002/DEPRECATED.txt"
+    },
+    {
+      "path": "results/dynamic/test_dynamic/run_003",
+      "kind": "run_artifact_dir",
+      "deprecated_reason": "pre-no-oracle-fix dynamic dummy consumed rubric.must_ask_slots",
+      "deprecation_marker": "results/dynamic/test_dynamic/run_003/DEPRECATED.txt"
+    },
+    {
+      "path": "results/dynamic/test_dynamic/run_004",
+      "kind": "run_artifact_dir",
+      "deprecated_reason": "pre-no-oracle-fix dynamic dummy consumed rubric.must_ask_slots",
+      "deprecation_marker": "results/dynamic/test_dynamic/run_004/DEPRECATED.txt"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "job_id": "job_20260310_055853_197f11b3",
+  "job_type": "validate_current",
+  "status": "succeeded",
+  "exit_code": 0,
+  "structured_errors": [],
+  "raw_summary": {
+    "stdout_tail": "Validation passed\nHard constraints\n- slot_count=120\n- dynamic.max_turns_cap=15\n- os_ocrd_subtypes_count=3\n- config=pib_config.yaml\nCases: 110\nRubrics: 110\nSlots in ontology: 120\nSVCL domains: 11\n\nModule Distribution\n-------------------\nDEP: 10\nDICCD: 10\nOCRD: 30\nOTHER: 10\nPD: 20\nSSRD: 10\nTSR: 20\n\nLabel Distribution\n------------------\nADJ: 10\nBDD: 10\nBPD: 10\nIED: 10\nOCD: 10\nOCPD: 10\nOS_OCRD: 10\nOTHER: 10\nPGD: 10\nPMDD: 10\nSSD: 10\n\nAmbiguity Distribution\n----------------------\nambiguous: 44\nunambiguous: 66\n\nRequired SVCL Coverage\n----------------------\ncog_emotion_process: 60\ncomorbidity_pattern: 22\ncourse_stability: 90\nenvironmental_risk: 30\nfunctional_impairment: 110\nsymptom_profile: 60\ntemperament_personality: 20\n",
+    "stderr_tail": ""
+  },
+  "target_release_id": "v1.1.0-rc1"
+}

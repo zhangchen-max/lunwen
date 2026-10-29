@@ -1,0 +1,7 @@
+{
+  "path": "results/static/test_static.jsonl",
+  "n_rows": 22,
+  "split_values": [
+    "test"
+  ]
+}
