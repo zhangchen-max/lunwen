@@ -635,9 +635,11 @@ def _bpd_cases(start_index: int) -> list[tuple[dict[str, Any], dict[str, Any]]]:
         ]
         risk_flags = {"suicide": False, "violence": False, "psychosis": False, "substance": False}
         must_ask_slots = ["longstanding_pattern", "relationship_instability", "abandonment_sensitivity", "impairment_social"]
-        if offset in {0, 4}:
+        if offset == 0:
             slots.append(("self_harm_ideation", True, "压力大的时候我会有自伤念头。", "high"))
             risk_flags["suicide"] = True
+        if offset == 4:
+            slots.append(("emotion_regulation_difficulty", "severe", "情绪一上来就很难控制。", "medium"))
         if offset == 2:
             slots.append(("identity_disturbance", True, "我常常不知道自己到底是谁。", "medium"))
         if offset == 3:
@@ -692,8 +694,10 @@ def _ocpd_cases(start_index: int) -> list[tuple[dict[str, Any], dict[str, Any]]]
             ("intrusive_thoughts", False, "不是那种闯进来的强迫念头。", "medium"),
             (impairment_slot, impairment_value, impairment_text, "high"),
         ]
-        if offset in {1, 4}:
+        if offset == 1:
             slots.append(("reluctance_delegate", True, "我很难把事情放心交给别人。", "medium"))
+        if offset == 4:
+            slots.append(("rigidity_morality", True, "我对规则和做法特别僵硬。", "medium"))
         if offset == 2:
             slots.append(("rigidity_morality", True, "我对规则和做法特别僵硬。", "medium"))
         rows.append(
@@ -732,8 +736,9 @@ def _other_cases(start_index: int) -> list[tuple[dict[str, Any], dict[str, Any]]
     for offset, (age_band, gender, context, minimal_cc, self_report, chart_full) in enumerate(specs):
         case_id = f"PIB_{start_index + offset:04d}"
         ambiguity = "ambiguous" if offset < 2 else "unambiguous"
+        impairment_sev = "moderate" if offset in {2, 3} else "mild"
         impairment_slot, impairment_value, impairment_text = _impairment_tuple(
-            context, "mild", "有一点影响，但我也说不清具体怎么回事。"
+            context, impairment_sev, "有一点影响，但我也说不清具体怎么回事。"
         )
         slots = [
             ("onset_time", "unknown", "我记不清具体是什么时候开始。", "low"),

@@ -3,3 +3,7 @@
 
 # WorkBuddy local project data (not paper source)
 .workbuddy/
+
+# benchmark local env & rollback backup (not source)
+PIB/.venv/
+PIB/.backup*/
