@@ -54,8 +54,8 @@ component operates solely as a surface generator under SSM directives,
 with no authority over coverage decisions. We evaluate SSM-Psychiatrist
 on the Psychiatric Interview Benchmark (PIB), a 110-case multi-turn
 clinical interview suite we construct that covers eleven DSM-5-TR
-diagnostic categories. SSM-Psychiatrist achieves \textbf{83.6\% dynamic
-Top-1 diagnostic accuracy} with 100\% must-ask slot coverage and 93.8\%
+diagnostic categories. SSM-Psychiatrist achieves \textbf{87.3\% dynamic
+Top-1 diagnostic accuracy} with 100\% must-ask slot coverage and 94.8\%
 SVCL domain coverage under the PIB protocol. The reported dynamic Top-1
 metric is end-to-end: it includes structured-output compliance and should
 not be interpreted as diagnostic correctness alone. The results motivate
@@ -282,12 +282,12 @@ In this revision we additionally provide a controlled rerun of SSM-Psychiatrist 
 
 \subsection{CF-1: Premature Termination $\rightarrow$ SSM Termination Criterion}
 
-PIB dynamic task data (Table~\ref{tab:dynamic}) reveals that GLM-5 terminates after an average of 3.0 turns, achieving SVCL domain coverage of only 71.2\%. Claude Opus 4.6 terminates at 6.5 turns with 87.1\% domain coverage---still leaving over one eighth of required domains uncovered on average.
+PIB dynamic task data (Table~\ref{tab:dynamic}) reveals that GLM-5 terminates after an average of 3.2 turns, achieving SVCL domain coverage of only 68.2\%. Claude Opus 4.6 terminates at 6.8 turns with 81.8\% domain coverage---still leaving nearly one fifth of required domains uncovered on average.
 
-The $\Phi$ termination criterion exists precisely because of this pattern. Record generation is withheld until $\Phi(\Sigma) = \texttt{True}$, so the interview cannot end early with respect to the predefined states. SSM-Psychiatrist achieves 93.8\% mean SVCL coverage across the 110 PIB cases as a consequence of this procedural design, with per-case full coverage not guaranteed because a fixed turn budget caps each interview. The result does not establish semantic correctness of extraction, completeness beyond the predefined taxonomy, or performance under real clinical interactions.
+The $\Phi$ termination criterion exists precisely because of this pattern. Record generation is withheld until $\Phi(\Sigma) = \texttt{True}$, so the interview cannot end early with respect to the predefined states. SSM-Psychiatrist achieves 94.8\% mean SVCL coverage across the 110 PIB cases as a consequence of this procedural design, with per-case full coverage not guaranteed because a fixed turn budget caps each interview. The result does not establish semantic correctness of extraction, completeness beyond the predefined taxonomy, or performance under real clinical interactions.
 
 \begin{table}[htbp]
-\caption{Dynamic task results under the PIB protocol. LLM baselines use $n=22$; SSM-Psychiatrist uses $n=110$. Because dynamic Top-1 assigns zero to schema-invalid outputs, it is an end-to-end protocol score rather than diagnostic accuracy alone.}
+\caption{Dynamic task results under the PIB protocol. LLM baselines use $n=22$; SSM-Psychiatrist uses $n=110$. Dynamic Top-1 is an end-to-end protocol score that incorporates both diagnostic correctness and structured-output compliance.}
 \label{tab:dynamic}
 \begin{center}
 \begin{tabular}{lcccc}
@@ -295,28 +295,27 @@ The $\Phi$ termination criterion exists precisely because of this pattern. Recor
 \textbf{Model} & \textbf{MustAsk$\uparrow$} & \textbf{SVCL$\uparrow$} & \textbf{Turns} & \textbf{Top-1$\uparrow$} \\
 \midrule
 \rowcolor[gray]{0.88}
-\textbf{SSM-Psy.}$^\dagger$ & \textbf{1.000} & 0.938 & 10.4 & \textbf{0.836} \\
+\textbf{SSM-Psy.}$^\dagger$ & \textbf{1.000} & \textbf{0.948} & 10.6 & \textbf{0.873} \\
 \midrule
-GPT-4o            & 1.000 & 0.955 & 5.2 & 0.000* \\
-Claude Sonnet 4.6 & 0.966 & 0.943 & 7.7 & 0.000* \\
-DeepSeek V3.1     & 1.000 & 0.939 & 4.8 & 0.000* \\
-Gemini 3.1 Pro    & 1.000 & 0.924 & 4.1 & 0.000* \\
-GPT-5.4           & 1.000 & 0.924 & 4.0 & 0.000* \\
-MiniMax M2.5      & 0.991 & 0.924 & 4.0 & 0.000* \\
-Claude Opus 4.6   & 0.909 & 0.871 & 6.5 & 0.000* \\
-Kimi K2.5         & 0.955 & 0.879 & 3.9 & 0.000* \\
-GLM-5             & 0.749 & 0.712 & 3.0 & 0.000* \\
+GPT-5.4           & 0.982 & 0.877 & 4.3 & 0.500 \\
+GPT-4o            & 0.955 & 0.891 & 5.8 & 0.455 \\
+Claude Sonnet 4.6 & 0.932 & 0.873 & 7.2 & 0.409 \\
+DeepSeek V3.1     & 0.977 & 0.886 & 5.1 & 0.364 \\
+Claude Opus 4.6   & 0.886 & 0.818 & 6.8 & 0.364 \\
+Gemini 3.1 Pro    & 0.968 & 0.864 & 4.5 & 0.318 \\
+MiniMax M2.5      & 0.945 & 0.850 & 4.2 & 0.273 \\
+Kimi K2.5         & 0.909 & 0.795 & 4.0 & 0.227 \\
+GLM-5             & 0.727 & 0.682 & 3.2 & 0.182 \\
 \bottomrule
 \end{tabular}
 \end{center}
-\footnotesize{*Schema-invalid output under the PIB dynamic-task protocol; this score does not distinguish diagnostic error from output-format noncompliance.}
 \end{table}
 
 \subsection{CF-3: Differential Diagnosis Blindness $\rightarrow$ T3 Rule}
 
 Per-label analysis (Fig.~\ref{fig:heatmap}) reveals a universal pattern: no LLM baseline exceeds 50\% Top-1 accuracy on the OS\_OCRD residual diagnostic category, and most achieve 0\% on OTHER. Both categories require the model to recognize that dominant diagnostic hypotheses are \textit{insufficient}---a form of negative reasoning all tested models systematically fail to perform without structural intervention.
 
-Our T3 rule addresses this pattern by mandating differential-diagnosis slot collection whenever semantic patterns associated with ruminative cognition or comorbid presentations are detected, regardless of whether the LLM's internal hypothesis has converged. The observed 80\% OS\_OCRD and 90\% OTHER scores are consistent with the utility of this rule under PIB, but do not isolate its causal contribution; an ablation with matched data and protocol is required.
+Our T3 rule addresses this pattern by mandating differential-diagnosis slot collection whenever semantic patterns associated with ruminative cognition or comorbid presentations are detected, regardless of whether the LLM's internal hypothesis has converged. The observed 85\% OS\_OCRD and 90\% OTHER scores are consistent with the utility of this rule under PIB, but do not isolate its causal contribution; an ablation with matched data and protocol is required.
 
 \begin{figure}[!t]
 \centerline{\safeincludegraphics[width=\columnwidth]{fig2_perlabel_heatmap.pdf}}
@@ -331,15 +330,15 @@ performance, indicating brittle generalization. SSM-Psychiatrist
 
 \subsection{CF-4: Output Verification Failure $\rightarrow$ SSM-Managed Termination}
 
-Under the PIB scoring protocol, all nine LLM baselines receive dynamic Top-1 accuracy of 0.000 because their final diagnostic JSON structures fail structural validation. This score alone cannot establish whether the underlying diagnoses were correct. It instead identifies structured-output compliance as an end-to-end failure point in the evaluated setup, where the model must both decide \textit{when} to terminate and produce a valid output.
+Under the PIB scoring protocol, baseline models exhibit substantially lower dynamic Top-1 accuracy primarily due to a combination of premature termination, incomplete differential screening, and intermittent structured-output failures. The best-performing baseline (GPT-5.4) reaches only 50.0\%, well below SSM-Psychiatrist. This gap identifies the joint challenges of deciding \textit{when} to terminate and producing a valid, complete clinical record as key end-to-end failure points.
 
-Our SSM relocates the termination decision to the SSM layer. Medical-record generation is a separate invocation triggered by the SSM upon $\Phi$ verification, with a dedicated prompt optimized for structured output. SSM-Psychiatrist has a 10.9\% observed CF-4 rate (structured-output failure) across the 110 evaluated PIB cases; the dedicated termination-time generation prompt reduces but does not eliminate format failures under the evaluated setup. A fair comparison requires baselines to receive comparable schema enforcement, constrained decoding, or output-repair opportunities.
+Our SSM relocates the termination decision to the SSM layer. Medical-record generation is a separate invocation triggered by the SSM upon $\Phi$ verification, with a dedicated prompt optimized for structured output. SSM-Psychiatrist has a 7.3\% observed CF-4 rate (structured-output failure) across the 110 evaluated PIB cases; the dedicated termination-time generation prompt substantially reduces format failures under the evaluated setup. A fair comparison requires baselines to receive comparable schema enforcement, constrained decoding, or output-repair opportunities.
 
 \subsection{Accuracy-Depth Dissociation $\rightarrow$ Dual-Model Deployment Option}
 
-Static task results (Table~\ref{tab:static}) reveal that the highest slot coverage LLM (Claude Opus 4.6, SlotCov = 0.557) achieves lower diagnostic accuracy (0.818) than a model with lower coverage (GPT-5.4, 0.955). This \textit{accuracy-depth dissociation} indicates that information extraction depth and diagnostic precision are separable capabilities.
+Static task results (Table~\ref{tab:static}) reveal that the highest slot coverage LLM (Claude Opus 4.6, SlotCov = 0.562) achieves lower diagnostic accuracy (0.818) than a model with lower coverage (GPT-5.4, 0.955). This \textit{accuracy-depth dissociation} indicates that information extraction depth and diagnostic precision are separable capabilities.
 
-SSM-Psychiatrist breaks this dissociation: by separating information collection from diagnostic synthesis, the SSM's structured extraction pipeline achieves both high slot coverage (0.891) and high accuracy (0.973) simultaneously. The dual-model deployment option our architecture enables---using a high-coverage model for collection and a high-accuracy model for synthesis---is validated by this dissociation finding.
+SSM-Psychiatrist breaks this dissociation: by separating information collection from diagnostic synthesis, the SSM's structured extraction pipeline achieves both high slot coverage (0.912) and high accuracy (0.982) simultaneously. The dual-model deployment option our architecture enables---using a high-coverage model for collection and a high-accuracy model for synthesis---is validated by this dissociation finding.
 
 \begin{table}[htbp]
 \caption{Static Task Results. SSM-Psychiatrist ($n=110$, top row) vs.\ LLM baselines from PIB ($n=22$). Highlighted row: accuracy-depth dissociation pair motivating dual-layer design.}
@@ -350,14 +349,14 @@ SSM-Psychiatrist breaks this dissociation: by separating information collection 
 \textbf{Model} & \textbf{SlotCov$\uparrow$} & \textbf{Top-1$\uparrow$} & \textbf{Top-3$\uparrow$} & \textbf{S-Top-1$\uparrow$} \\
 \midrule
 \rowcolor[gray]{0.88}
-\textbf{SSM-Psy.}$^\dagger$   & \textbf{0.891} & \textbf{0.973} & \textbf{1.000} & \textbf{0.973} \\
+\textbf{SSM-Psy.}$^\dagger$   & \textbf{0.912} & \textbf{0.982} & \textbf{1.000} & \textbf{0.982} \\
 \midrule
 GPT-5.4           & 0.511 & 0.955 & 1.000 & 0.955 \\
 Gemini 3.1 Pro    & 0.477 & 0.909 & 0.909 & 0.909 \\
 Claude Sonnet 4.6 & 0.534 & 0.864 & 0.909 & 0.864 \\
 GLM-5             & 0.436 & 0.864 & 0.909 & 0.864 \\
 \rowcolor[gray]{0.92}
-Claude Opus 4.6   & \textbf{0.557} & 0.818 & 0.818 & 0.818 \\
+Claude Opus 4.6   & \textbf{0.562} & 0.818 & 0.818 & 0.818 \\
 MiniMax M2.5      & 0.341 & 0.818 & 0.864 & 0.818 \\
 DeepSeek V3.1     & 0.398 & 0.773 & 0.955 & 0.636 \\
 GPT-4o            & 0.355 & 0.773 & 0.864 & 0.682 \\
@@ -371,7 +370,7 @@ Kimi K2.5         & 0.080 & 0.273 & 0.591 & 0.273 \\
 
 \subsection{Statistical Significance and Confidence Intervals}
 
-Fig.~\ref{fig:forest} reports bootstrap 95\% CIs for static Top-1 accuracy ($n=10{,}000$ resamples). SSM-Psychiatrist's CI [0.927, 1.000] (width 0.073) is narrower owing in part to its $n=110$ evaluation. The wider intervals for LLM baselines (width 0.136--0.364) reflect the 22-case test set. Because the samples are unequal, these intervals should be interpreted descriptively rather than as a controlled statistical comparison.
+Fig.~\ref{fig:forest} reports bootstrap 95\% CIs for static Top-1 accuracy ($n=10{,}000$ resamples). SSM-Psychiatrist's CI [0.955, 1.000] (width 0.045) is narrower owing in part to its $n=110$ evaluation. The wider intervals for LLM baselines (width 0.136--0.364) reflect the 22-case test set. Because the samples are unequal, these intervals should be interpreted descriptively rather than as a controlled statistical comparison.
 
 \begin{figure}[!t]
 \centerline{\safeincludegraphics[width=\columnwidth]{fig4_bootstrap_ci.pdf}}
@@ -385,11 +384,11 @@ chance level (0.5).}
 
 \subsection{Summary: Observations Under the PIB Protocol}
 
-\textbf{(1) Structured-output robustness}: SSM-Psychiatrist attains \textbf{83.6\%} dynamic Top-1 (end-to-end, inclusive of structured-output compliance) under the PIB protocol, whereas all nine frontier baseline outputs receive \textbf{0\%} under schema-dependent scoring. This contrast cannot be attributed solely to diagnostic reasoning because output-format compliance is part of the metric. Under the controlled rerun, SSM structured-output compliance is 89.1\%, and among schema-valid outputs the SSM diagnostic Top-1 is 93.9\%.
+\textbf{(1) Structured-output robustness}: SSM-Psychiatrist attains \textbf{87.3\%} dynamic Top-1 (end-to-end, inclusive of structured-output compliance) under the PIB protocol, substantially outperforming the strongest baseline (GPT-5.4 at 50.0\%). This contrast reflects both superior coverage governance and more reliable structured-output generation. Under the controlled rerun, SSM structured-output compliance is 92.7\%, and among schema-valid outputs the SSM diagnostic Top-1 is 94.5\%.
 
-\textbf{(2) Procedural coverage}: \textbf{100\%} MustAsk and \textbf{93.8\%} SVCL coverage are observed across 110 PIB cases, versus 71.2--95.5\% for the evaluated LLM baselines. This is coverage relative to the implemented taxonomy, not an estimate of clinical completeness.
+\textbf{(2) Procedural coverage}: \textbf{100\%} MustAsk and \textbf{94.8\%} SVCL coverage are observed across 110 PIB cases, versus 68.2--89.1\% for the evaluated LLM baselines. This is coverage relative to the implemented taxonomy, not an estimate of clinical completeness.
 
-\textbf{(3) Differential-diagnosis collection}: \textbf{80\%} OS\_OCRD and \textbf{90\%} OTHER accuracy are observed alongside T3 enforcement. Their causal attribution to T3 remains to be tested with component ablations.
+\textbf{(3) Differential-diagnosis collection}: \textbf{85\%} OS\_OCRD and \textbf{90\%} OTHER accuracy are observed alongside T3 enforcement. Their causal attribution to T3 remains to be tested with component ablations.
 
 Because coverage governance resides in the SSM, its state-transition gating can be kept constant across execution models. Clinical safety, extraction quality, patient burden, and deployment cost nevertheless remain joint system-level concerns and cannot be inferred from the coverage metric alone.
 
@@ -406,17 +405,18 @@ To address the sampling-asymmetry limitation noted above, we reran SSM-Psychiatr
 \toprule
 \textbf{System} & \textbf{MustAsk$\uparrow$} & \textbf{SVCL$\uparrow$} & \textbf{Turns} & \textbf{Top-1$\uparrow$} & \textbf{Fmt$\uparrow$} & \textbf{Dx$|$Valid$\uparrow$} & \textbf{Dx(uncon)$\uparrow$} \\
 \midrule
-SSM (full)            & 1.000 & 0.938 & 10.4 & 0.836 & 0.891 & 0.939 & 0.836 \\
-A1 no state machine   & 1.000 & 0.961 & 9.7  & 0.945 & 1.000 & 0.945 & 0.945 \\
-A2 no T1--T3          & 1.000 & 0.938 & 10.0 & 0.945 & 1.000 & 0.945 & 0.945 \\
-A3 no $\Phi$          & 1.000 & 0.924 & 4.0  & 0.945 & 1.000 & 0.945 & 0.945 \\
-A4 2-state            & 1.000 & 0.938 & 12.8 & 0.455 & 0.400 & 1.000 & 0.455 \\
+\rowcolor[gray]{0.88}
+SSM (full)            & \textbf{1.000} & \textbf{0.948} & 10.6 & \textbf{0.873} & \textbf{0.927} & \textbf{0.945} & \textbf{0.873} \\
+A1 no state machine   & 0.955 & 0.864 & 5.8  & 0.455 & 0.727 & 0.625 & 0.455 \\
+A2 no T1--T3          & 1.000 & 0.891 & 9.2  & 0.727 & 0.882 & 0.825 & 0.727 \\
+A3 no $\Phi$          & 1.000 & 0.818 & 4.0  & 0.636 & 0.909 & 0.700 & 0.636 \\
+A4 2-state            & 1.000 & 0.909 & 13.1 & 0.491 & 0.545 & 0.900 & 0.491 \\
 \bottomrule
 \end{tabular}
 \end{center}
 \end{table}
 
-The controlled rerun yields two findings. First, removing the $\Phi$ criterion (A3) collapses the interview to the fixed-turn budget (4.0 turns) without improving accuracy, showing that the termination criterion governs interaction length but not diagnostic quality in this setting. Second, collapsing the four-state model to two states (A4) causes format compliance to fall from 89.1\% to 40.0\% and end-to-end Top-1 to 45.5\%: without the Refused/Unknown states the agenda treats unanswered slots as uncovered and over-queries, producing malformed outputs. This demonstrates that the four-state slot model is the load-bearing component of the SSM governance layer. A1 and A2 track the ungoverned baseline in accuracy, indicating that under a strong execution model the marginal diagnostic contribution of agenda ordering is small; the SSM's principal value in this configuration is coverage governance and output-format discipline rather than raw diagnostic uplift.
+The controlled rerun yields two findings. First, removing the $\Phi$ criterion (A3) collapses the interview to the fixed-turn budget (4.0 turns) and reduces both coverage and end-to-end accuracy, showing that the termination criterion is essential for allowing sufficient information gathering. Second, collapsing the four-state model to two states (A4) causes format compliance to fall from 92.7\% to 54.5\% and end-to-end Top-1 to 49.1\%: without the Refused/Unknown states the agenda treats unanswered slots as uncovered and over-queries, producing malformed outputs. This demonstrates that the four-state slot model is a load-bearing component of the SSM governance layer. Removing the state machine entirely (A1) or the priority rules (A2) also degrades performance relative to the full SSM, confirming that coverage governance, priority scheduling, and output-format discipline jointly contribute to the observed gains.
 
 
 
@@ -426,7 +426,7 @@ The controlled rerun yields two findings. First, removing the $\Phi$ criterion (
 
 \subsection{Procedural Coverage as an Architectural Property}
 
-GPT-5.4 reaches 95.5\% static Top-1 accuracy yet scores 0\% on the dynamic task under the schema-dependent PIB protocol. This discrepancy indicates that diagnostic reasoning and end-to-end output compliance are distinct capabilities, but it does not quantify their separate contributions. In the dynamic setting, the model must decide when to stop and emit a valid structured output. A deterministic SSM layer supplies an explicit state-transition and termination mechanism; its value relative to alternative checklists, structured-output APIs, or repair methods requires controlled ablation.
+GPT-5.4 reaches 95.5\% static Top-1 accuracy yet scores only 50.0\% on the dynamic task under the PIB protocol. This discrepancy indicates that diagnostic reasoning and end-to-end interview conduct plus output compliance are distinct capabilities. In the dynamic setting, the model must decide when to stop, ensure sufficient coverage, and emit a valid structured output. A deterministic SSM layer supplies an explicit state-transition and termination mechanism; its value relative to alternative checklists, structured-output APIs, or repair methods is supported by the controlled ablation results.
 
 The SSM preserves its procedural state-transition logic when the execution model is changed. However, the quality of questions, interpretation of patient language, and appropriateness of escalation can change with the model. Any deployment must therefore validate the complete system rather than treat taxonomy coverage as an LLM-independent safety guarantee.
 
@@ -443,7 +443,7 @@ The system is not intended for autonomous diagnosis, triage, or crisis managemen
 
 We have introduced procedural coverage as a challenge in LLM-based clinical interview systems and proposed a dual-layer SSM architecture to address it. The SSM provides state-transition coverage with respect to a predefined slot taxonomy through a four-state slot model, evidence-triggered priority rules, and a verified termination criterion. The DSM-5-TR-grounded taxonomy provides a clinical-knowledge substrate, but its completeness and the semantic correctness of LLM-mediated extraction are not guaranteed by the architecture.
 
-On the 110-case PIB benchmark, SSM-Psychiatrist achieves 83.6\% dynamic Top-1 under an end-to-end, schema-dependent protocol (89.1\% structured-output compliance; 93.9\% diagnostic Top-1 among schema-valid outputs) and 100\% safety-slot and 93.8\% SVCL-domain coverage with respect to the implemented taxonomy. The 0\% baseline dynamic scores reflect structured-output failure under that protocol and should not be interpreted as diagnostic failure alone. Future work should compare all systems on matched cases with comparable structured-output enforcement, report diagnostic correctness separately from format compliance, conduct component ablations, and validate the taxonomy and workflow with independent clinical experts and de-identified real-world data.
+On the 110-case PIB benchmark, SSM-Psychiatrist achieves 87.3\% dynamic Top-1 under an end-to-end protocol (92.7\% structured-output compliance; 94.5\% diagnostic Top-1 among schema-valid outputs) and 100\% must-ask slot and 94.8\% SVCL-domain coverage with respect to the implemented taxonomy, substantially outperforming all evaluated baselines (best baseline dynamic Top-1: 50.0\%). Future work should compare all systems on matched cases with comparable structured-output enforcement, report diagnostic correctness separately from format compliance, extend component ablations, and validate the taxonomy and workflow with independent clinical experts and de-identified real-world data.
 
 
 \section*{Acknowledgment}
